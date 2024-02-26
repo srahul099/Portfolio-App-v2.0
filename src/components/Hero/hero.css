@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
 }
 .desc {
   display: flex;
@@ -12,7 +12,7 @@
   align-items: center;
 
   color: var(--neon-green);
-  z-index: 1;
+  z-index: 0;
 }
 
 .line1,
