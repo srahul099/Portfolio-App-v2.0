@@ -1,0 +1,23 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  border-radius: 10px;
+  margin: 0 3rem;
+  background-color: var(--neon-green);
+  color: var(--bg-black);
+  padding: 40px 80px;
+}
+
+.about-heading {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: "Humane";
+}
+
+.about-desc {
+  font-size: 1.5rem;
+  font-family: "DM Sans";
+}
