@@ -23,7 +23,7 @@ const Header = () => {
           to="about-page"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-80}
           duration={400}
         >
           <h3 className="about-nav">About</h3>
