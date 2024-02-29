@@ -1,0 +1,13 @@
+.section-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+  margin: 0 100px;
+}
+
+@media (max-width: 768px) {
+  .section-flex {
+    margin: 0 20px;
+  }
+}

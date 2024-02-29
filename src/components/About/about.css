@@ -5,16 +5,15 @@
   align-items: center;
   height: fit-content;
   border-radius: 10px;
-  margin: 50px 98px;
   background-color: var(--neon-green);
   color: var(--bg-black);
-  padding: 40px 80px;
+  padding: 50px 80px;
   text-align: left;
+  gap: 20px;
 }
 
 .about-heading {
   font-size: 4rem;
-  margin-bottom: 1rem;
   font-family: "Humane";
 }
 
@@ -23,6 +22,12 @@
   font-family: "DM Sans";
 }
 
+@media (max-width: 1024px) {
+  .about-container {
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
 @media screen and (max-width: 768px) {
   .about-container {
     margin: 0 1rem;
@@ -35,6 +40,6 @@
     margin-bottom: 0;
   }
   .about-desc {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
