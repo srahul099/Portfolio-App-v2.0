@@ -72,7 +72,9 @@
   }
   .name {
     font-size: 15rem;
-    line-height: 16rem;
+    line-height: 200px;
+    height: 170px;
+    margin: 10px 0;
   }
   .line1 {
     font-size: 2rem;
@@ -98,9 +100,10 @@
     height: 30rem;
   }
   .name {
-    margin-top: -1rem;
     font-size: 10rem;
-    line-height: 11rem;
+    line-height: 150px;
+    margin-bottom: 0px;
+    height: 140px;
   }
   .line1 {
     font-size: 1.5rem;
