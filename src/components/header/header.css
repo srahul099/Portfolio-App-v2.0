@@ -3,6 +3,9 @@
   background-color: var(--bg-black);
 }
 
+.Link {
+  cursor: pointer;
+}
 .navbaritems {
   display: flex;
   flex-direction: row;
@@ -16,19 +19,22 @@
   color: var(--white);
 }
 
-.home,
-.about,
-.projects,
-.contact {
+.home-nav,
+.about-nav,
+.projects-nav,
+.contact-nav {
   font-family: "DM Sans";
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
 }
 
+.active {
+  color: var(--neon-green) !important;
+}
+
 @media (max-width: 768px) {
   .navbaritems {
-    transition: all 0.5s ease;
     display: none;
   }
 }
