@@ -12,7 +12,7 @@ const Header = () => {
           to="hero-page"
           spy={true}
           smooth={true}
-          offset={-80}
+          offset={-100}
           duration={400}
         >
           <h3 className="home-nav">Home</h3>
