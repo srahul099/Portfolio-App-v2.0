@@ -27,7 +27,7 @@ body {
 
 .project-image {
   border-radius: 15px 15px 0 0;
-  height: 220px;
+  height: 100%;
 }
 
 .project-desc {
