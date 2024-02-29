@@ -5,17 +5,16 @@ import Projects from "../../components/projects/Projects";
 import "./homepage.css";
 const Homepage = () => {
   return (
-    <div>
+    <div className="section-flex">
       <div id="hero-page">
         <Hero />
       </div>
-      <div className="section-flex">
-        <div id="about-page">
-          <About />
-        </div>
-        <div id="projects-page">
-          <Projects />
-        </div>
+
+      <div id="about-page">
+        <About />
+      </div>
+      <div id="projects-page">
+        <Projects />
       </div>
     </div>
   );

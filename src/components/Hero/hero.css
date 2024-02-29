@@ -10,7 +10,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   color: var(--neon-green);
   z-index: 0;
 }
@@ -31,9 +30,13 @@
   font-size: 20rem;
   text-align: center;
   line-height: 18rem;
-  height: 100%;
-  margin-bottom: -2rem;
+  vertical-align: baseline;
+  line-height: 300px;
+  margin-bottom: 13px;
+  height: 250px;
   word-wrap: nowrap;
+  -webkit-font-smooth: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .line2 {
