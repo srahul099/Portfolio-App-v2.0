@@ -90,6 +90,7 @@ body {
 @media (max-width: 768px) {
   .projects-section {
     margin: 0;
+    padding: 20px;
   }
   .projects {
     grid-template-columns: repeat(1, 1fr);
