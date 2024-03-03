@@ -1,0 +1,91 @@
+body {
+  font-family: "DM Sans";
+}
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  padding: 4rem;
+  background-color: var(--neon-green);
+  color: var(--dark-blue);
+  border-radius: 10px;
+}
+.getintouch {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+.contact-heading {
+  font-family: "Humane";
+  font-size: 3rem;
+}
+
+.contact-desc {
+  width: 60%;
+  text-align: left;
+  font-size: 1.3rem;
+}
+.Contactform-App {
+  width: 50%;
+}
+form.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+.field label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.field input {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.field textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: none;
+  width: 100%;
+  min-height: 200px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: var(--dark-blue);
+  color: var(--neon-green);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.emailError {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+form {
+  padding: 20px 20px 0 20px;
+}

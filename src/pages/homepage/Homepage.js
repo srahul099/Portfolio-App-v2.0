@@ -3,6 +3,7 @@ import Hero from "../../components/Hero/Hero";
 import About from "../../components/About/About";
 import Projects from "../../components/projects/Projects";
 import "./homepage.css";
+import Contact from "../../components/Contact/Contact";
 const Homepage = () => {
   return (
     <div className="section-flex">
@@ -15,6 +16,9 @@ const Homepage = () => {
       </div>
       <div id="projects-page">
         <Projects />
+      </div>
+      <div id="contact-page">
+        <Contact />
       </div>
     </div>
   );
