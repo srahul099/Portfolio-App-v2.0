@@ -4,8 +4,6 @@ import About from "../../components/About/About";
 import Projects from "../../components/projects/Projects";
 import "./homepage.css";
 import Contact from "../../components/Contact/Contact";
-import CustomCursor from "../../components/CustomCursor";
-import CustomCursorManager from "../../components/CustomCursor/context/CustomCursorManager";
 const Homepage = () => {
   return (
     <div>
