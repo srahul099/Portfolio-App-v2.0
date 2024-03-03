@@ -61,6 +61,7 @@ form.contact-form {
 
 .field textarea {
   padding: 0.5rem 1rem;
+  resize: vertical;
   border-radius: 3px;
   border: none;
   width: 100%;
