@@ -27,7 +27,7 @@ body {
 
 .project-image {
   border-radius: 15px 15px 0 0;
-  height: 220px;
+  height: 100%;
 }
 
 .project-desc {
@@ -94,6 +94,10 @@ body {
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: repeat(1, 1fr);
+    padding: 30px 10px 30px 10px;
+  }
+  .projects-section {
+    font-size: 2rem;
   }
   .project-container {
     height: fit-content;
@@ -101,5 +105,16 @@ body {
     background: linear-gradient(#131219, #131219) padding-box,
       linear-gradient(var(--angle), #070707, var(--neon-green)) border-box;
     animation: 8s rotate linear infinite;
+  }
+  .project-desc {
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+  }
+  .project-desc p {
+    font-size: 1rem;
+  }
+  .project-desc h2 {
+    font-size: 1.5rem;
   }
 }

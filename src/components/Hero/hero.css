@@ -10,7 +10,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   color: var(--neon-green);
   z-index: 0;
 }
@@ -31,9 +30,13 @@
   font-size: 20rem;
   text-align: center;
   line-height: 18rem;
-  height: 100%;
-  margin-bottom: -2rem;
+  vertical-align: baseline;
+  line-height: 300px;
+  margin-bottom: 13px;
+  height: 250px;
   word-wrap: nowrap;
+  -webkit-font-smooth: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .line2 {
@@ -69,7 +72,9 @@
   }
   .name {
     font-size: 15rem;
-    line-height: 16rem;
+    line-height: 200px;
+    height: 170px;
+    margin: 10px 0;
   }
   .line1 {
     font-size: 2rem;
@@ -95,9 +100,10 @@
     height: 30rem;
   }
   .name {
-    margin-top: -1rem;
     font-size: 10rem;
-    line-height: 11rem;
+    line-height: 150px;
+    margin-bottom: 0px;
+    height: 140px;
   }
   .line1 {
     font-size: 1.5rem;

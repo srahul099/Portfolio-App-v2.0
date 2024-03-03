@@ -12,7 +12,7 @@ const Header = () => {
           to="hero-page"
           spy={true}
           smooth={true}
-          offset={-80}
+          offset={-100}
           duration={400}
         >
           <h3 className="home-nav">Home</h3>
@@ -23,7 +23,7 @@ const Header = () => {
           to="about-page"
           spy={true}
           smooth={true}
-          offset={-80}
+          offset={-200}
           duration={400}
         >
           <h3 className="about-nav">About</h3>
@@ -34,14 +34,22 @@ const Header = () => {
           to="projects-page"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-200}
           duration={400}
         >
           <h3 className="projects-nav">Projects</h3>
         </Link>
-        <a href="#">
+        <Link
+          className="Link"
+          activeClass="active"
+          to="contact-page"
+          spy={true}
+          smooth={true}
+          offset={-200}
+          duration={400}
+        >
           <h3 className="contact-nav">Contact</h3>
-        </a>
+        </Link>
       </div>
     </div>
   );

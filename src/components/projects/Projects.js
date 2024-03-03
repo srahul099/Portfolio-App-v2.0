@@ -1,16 +1,16 @@
 import React from "react";
 import "./projects.css";
+import weatherbanner from "./banners/Weather-banner.png";
+import userauthenticationbanner from "./banners/UserAunthentication-banner.png";
+import credclonebanner from "./banners/Credclone-banner.png";
+import inprogressbanner from "./banners/inprogress-banner.png";
 const Projects = () => {
   return (
     <div className="projects-section">
       <h1>Projects</h1>
       <div className="projects">
         <div className="project-container">
-          <img
-            src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            className="project-image"
-          />
+          <img src={weatherbanner} alt="" className="project-image" />
           <div className="project-desc">
             <h2>Weather App</h2>
             <p>
@@ -27,11 +27,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project-container">
-          <img
-            src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            className="project-image"
-          />
+          <img src={inprogressbanner} alt="" className="project-image" />
           <div className="project-desc">
             <h2>To-Do app</h2>
             <p>
@@ -48,11 +44,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project-container">
-          <img
-            src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            className="project-image"
-          />
+          <img src={credclonebanner} alt="" className="project-image" />
           <div className="project-desc">
             <h2>Cred Clone</h2>
             <p>
@@ -70,7 +62,7 @@ const Projects = () => {
         </div>
         <div className="project-container">
           <img
-            src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={userauthenticationbanner}
             alt=""
             className="project-image"
           />

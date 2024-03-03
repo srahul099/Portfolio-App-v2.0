@@ -1,12 +1,13 @@
-.infinitehorizonscroll {
-  opacity: 0.18;
+.container {
+  height: 100vh;
   display: flex;
-  gap: 2.4rem;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  flex-direction: column;
+}
+.infinitehorizonscroll {
+  opacity: 0.18;
   overflow: hidden;
+  /* margin: 0 100px; */
 }
 
 .infinitehorizon1 {
@@ -58,9 +59,7 @@
 }
 
 .infinitehorizon2 {
-  top: -70px;
   position: relative;
-  gap: 2.4rem;
   display: flex;
   overflow: hidden;
   white-space: nowrap;
@@ -107,21 +106,29 @@
 }
 
 @media (max-width: 1024px) {
+  .container {
+    height: 80vh;
+  }
   .infinitehorizonscroll {
     width: 100vw;
   }
   .infinitehorizon1,
   .infinitehorizon2 {
-    font-size: 150px;
+    font-size: 12rem;
+    width: auto;
   }
 }
 
 @media (max-width: 768px) {
+  .container {
+    height: 80vh;
+  }
   .infinitehorizonscroll {
     width: 100vw;
   }
   .infinitehorizon1,
   .infinitehorizon2 {
+    font-size: 7rem;
     width: auto;
   }
 }

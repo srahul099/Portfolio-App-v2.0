@@ -1,5 +1,7 @@
 .App {
+  align-items: center;
   text-align: center;
+  height: 100%;
 }
 
 .Header {
