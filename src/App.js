@@ -1,15 +1,21 @@
 import "./App.css";
+import CustomCursor from "./components/CustomCursor";
+import CustomCursorManager from "./components/CustomCursor/context/CustomCursorManager";
 import Header from "./components/header/Header";
 import Homepage from "./pages/homepage/Homepage";
-
 function App() {
   return (
-    <div className="App">
-      <div className="Header">
-        <Header />
+    <CustomCursorManager>
+      <div className="App">
+        <div className="customcursor-display">
+          <CustomCursor />
+        </div>
+        <div className="Header">
+          <Header />
+        </div>
+        <Homepage />
       </div>
-      <Homepage />
-    </div>
+    </CustomCursorManager>
   );
 }
 

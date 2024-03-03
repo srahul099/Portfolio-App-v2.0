@@ -4,21 +4,25 @@ import About from "../../components/About/About";
 import Projects from "../../components/projects/Projects";
 import "./homepage.css";
 import Contact from "../../components/Contact/Contact";
+import CustomCursor from "../../components/CustomCursor";
+import CustomCursorManager from "../../components/CustomCursor/context/CustomCursorManager";
 const Homepage = () => {
   return (
-    <div className="section-flex">
-      <div id="hero-page">
-        <Hero />
-      </div>
+    <div>
+      <div className="section-flex">
+        <div id="hero-page">
+          <Hero />
+        </div>
 
-      <div id="about-page">
-        <About />
-      </div>
-      <div id="projects-page">
-        <Projects />
-      </div>
-      <div id="contact-page">
-        <Contact />
+        <div id="about-page">
+          <About />
+        </div>
+        <div id="projects-page">
+          <Projects />
+        </div>
+        <div id="contact-page">
+          <Contact />
+        </div>
       </div>
     </div>
   );
