@@ -14,4 +14,7 @@
   .Header {
     display: none;
   }
+  .customcursor-display {
+    display: none;
+  }
 }
