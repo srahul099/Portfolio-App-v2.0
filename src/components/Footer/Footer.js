@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer-left">
           <h2>Rahul.</h2>
           <p className="footer-userdesc">
-            I'm a web developer and designer based in India. I have a vary deep
+            I'm a web developer and designer based in India. I have a very deep
             passion to design stuff &#10084; This Website is made with the lot
             of love and passion.
           </p>
