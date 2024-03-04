@@ -6,7 +6,7 @@ body {
   flex-direction: row;
   padding: 4rem;
   background-color: var(--neon-green);
-  color: var(--dark-blue);
+  color: var(--black-blue);
   border-radius: 10px;
 }
 .getintouch {
@@ -75,7 +75,7 @@ form.contact-form {
   border: none;
   width: 100%;
   font-size: 1rem;
-  background-color: var(--dark-blue);
+  background-color: var(--black-blue);
   color: var(--neon-green);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -92,6 +92,9 @@ form {
 }
 
 @media (max-width: 768px) {
+  .field {
+    font-weight: 500;
+  }
   .contact-container {
     flex-direction: column;
     gap: 2rem;
