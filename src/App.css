@@ -3,6 +3,11 @@
   text-align: center;
   height: 100%;
 }
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
 
 .Header {
   position: sticky;

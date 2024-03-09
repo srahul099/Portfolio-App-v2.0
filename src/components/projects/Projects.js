@@ -1,14 +1,64 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./projects.css";
-import weatherbanner from "./banners/Weather-banner.png";
-import userauthenticationbanner from "./banners/UserAunthentication-banner.png";
-import credclonebanner from "./banners/Credclone-banner.png";
-import inprogressbanner from "./banners/inprogress-banner.png";
+
+// banner imports
+import weatherbanner from "../../common/images/banners/Weather-banner.png";
+import userauthenticationbanner from "../../common/images/banners/UserAunthentication-banner.png";
+import credclonebanner from "../../common/images/banners/Credclone-banner.png";
+import inprogressbanner from "../../common/images/banners/inprogress-banner.png";
+import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
+//banner imports end
+
+import { Player } from "@lordicon/react";
+import { Link } from "react-router-dom";
+import { animateScroll } from "react-scroll";
+const ICON = require("../../common/lotties/more-animation");
 const Projects = () => {
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
+  const playerRef = useRef(null);
+  useEffect(() => {
+    playerRef.current?.playFromBeginning();
+  }, []);
   return (
     <div className="projects-section">
-      <h1>Projects</h1>
+      <div className="projects-header">
+        <h1>Projects</h1>
+        <Link to="/projects" onClick={scrollToTop} className="more-projects">
+          <h2>See All</h2>
+          <div className="more-icon">
+            <Player
+              ref={playerRef}
+              icon={ICON}
+              colorize="var(--white)"
+              onComplete={() => playerRef.current?.playFromBeginning()}
+              size={40}
+            />
+          </div>
+        </Link>
+      </div>
       <div className="projects">
+        {/*  */}
+        {/* projects */}
+        <div className="project-container">
+          <img src={portfoliobanner} alt="" className="project-image" />
+          <div className="project-desc">
+            <h2>Portfolio</h2>
+            <p>
+              Developed to showcase my skills in web development, my portfolio
+              website exemplifies proficiency in technologies such as ReactJS,
+              CSS, and Figma. Through these tools, I ensure a seamless and
+              interactive user experience.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=react,javascript,css,figma"
+              alt="tech stack"
+              className="project-tech"
+            />
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </div>
         <div className="project-container">
           <img src={weatherbanner} alt="" className="project-image" />
           <div className="project-desc">
@@ -20,23 +70,6 @@ const Projects = () => {
             </p>
             <img
               src="https://skillicons.dev/icons?i=react,nodejs,express"
-              alt="tech stack"
-              className="project-tech"
-            />
-            {/* <button className="demo-btn">Demo</button> */}
-          </div>
-        </div>
-        <div className="project-container">
-          <img src={inprogressbanner} alt="" className="project-image" />
-          <div className="project-desc">
-            <h2>To-Do app</h2>
-            <p>
-              Developed a responsive Todo List web app using ReactJS for
-              enhanced user interaction , with Firebase for real-time data
-              management and synchronization.
-            </p>
-            <img
-              src="https://skillicons.dev/icons?i=react,materialui,firebase"
               alt="tech stack"
               className="project-tech"
             />
