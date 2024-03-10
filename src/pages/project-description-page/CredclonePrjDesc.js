@@ -17,11 +17,11 @@ const CredclonePrjDesc = () => {
         <img src={credclonebanner} alt="" className="imgbanner" />
         <div className="project_Shortdesc">
           <h1 className="project_Heading">Cred Clone</h1>
-          <p className="project_Type">Full-Stack</p>
+          <p className="project_Type">Front-End</p>
           <p className="project_Short_Description">
-            This application is designed to provide real-time weather
-            information. It fetches data from the Weather API and presents it to
-            the user.
+            This project is a clone of the CRED landing page, implemented using
+            React.js. The goal of the project is to replicate the look, feel,
+            and functionality of the original CRED landing page.
           </p>
           <div className="project_Techstack">
             <h3 className="project_Techstack_heading">Tech Stack</h3>
@@ -48,49 +48,23 @@ const CredclonePrjDesc = () => {
         <div className="description">
           <ul>
             <li>
-              <h4>Geocoding:</h4>
+              <h4>Intersection Observer API:</h4>
               <p>
-                This is responsible for converting addresses into geographic
-                coordinates (latitude and longitude). It uses the OpenCage
-                Geocoding API to achieve this.
+                The project is built using ReactThis API is used to detect when
+                an element becomes visible in the viewport. It's used in the
+                ScreenText.js file to control animations and image changes as
+                the user scrolls through the page.
               </p>
             </li>
             <li>
-              <h4>Weather Forecasting:</h4>
+              <h4>Animations:</h4>
               <p>
-                The application takes latitude and longitude as inputs and
-                fetches the current weather data for that location. It uses the
-                Weather API to get this data.
-              </p>
-            </li>
-            <li>
-              <h4>Web Server:</h4>
-              <p>
-                This acts the entry point of the application and sets up the web
-                server using Express, a popular Node.js framework. It sets up
-                static file serving using the express.static middleware, and
-                sets up routes for the home page and the /weather endpoint. The
-                /weather endpoint uses the geocode and forecast modules to fetch
-                the weather data for a given address.
-              </p>
-            </li>
-            <li>
-              <h4>Data Presentation:</h4>
-              <p>
-                The application presents the weather data in a user-friendly
-                format. It provides information about the current temperature
-                (in Celsius), the weather condition (like sunny, cloudy, etc.),
-                and the precipitation in millimeters.
+                The project uses animations to enhance the user experience.
+                Animations are controlled by the Intersection Observer API and
+                the state of the showanimation variable.
               </p>
             </li>
           </ul>
-          <h2>Libraries Used:</h2>
-          <p>
-            The application uses the express, path, and hbs libraries for
-            setting up the web server, handling file paths, and rendering views
-            respectively. It also uses the request library to make HTTP requests
-            to the Weather API and OpenCage API.
-          </p>
         </div>
       </div>
     </div>

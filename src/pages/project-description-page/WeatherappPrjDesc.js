@@ -84,7 +84,9 @@ const WeatherappPrjDesc = () => {
               </p>
             </li>
           </ul>
-          <h2>Libraries Used:</h2>
+        </div>
+        <h2>Libraries Used:</h2>
+        <div className="description">
           <p>
             The application uses the express, path, and hbs libraries for
             setting up the web server, handling file paths, and rendering views
