@@ -1,25 +1,31 @@
 import React, { useState } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
+  const location = useLocation();
   const [currentSection, setCurrentSection] = useState("home");
-  const scrollToTop = () => {
+  const homescrollToTop = () => {
     scroll.scrollToTop();
     setCurrentSection("home");
+  };
+  const projectscrollToTop = () => {
+    scroll.scrollToTop();
+    setCurrentSection("projects");
   };
 
   return (
     <div className="navbar">
       <div className="navbaritems">
-        <RouterLink
+        <NavLink
+          exact
           to="/"
-          className={currentSection === "home" ? "active" : ""}
-          onClick={scrollToTop}
+          className={location.pathname === "/" ? "active" : ""}
+          onClick={homescrollToTop}
         >
           <h3 className="home-nav">Home</h3>
-        </RouterLink>
+        </NavLink>
         <ScrollLink
           className="Link"
           to="about-page"
@@ -33,19 +39,13 @@ const Header = () => {
         >
           <h3 className="about-nav">About</h3>
         </ScrollLink>
-        <ScrollLink
-          className="Link"
-          to="projects-page"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          activeClass="active"
-          onSetActive={() => setCurrentSection("projects")}
-          onSetInactive={() => setCurrentSection("home")}
+        <NavLink
+          to="/projects"
+          className={location.pathname.startsWith("/projects") ? "active" : ""}
+          onClick={projectscrollToTop}
         >
           <h3 className="projects-nav">Projects</h3>
-        </ScrollLink>
+        </NavLink>
         <ScrollLink
           className="Link"
           to="contact-page"

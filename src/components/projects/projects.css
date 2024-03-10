@@ -6,7 +6,6 @@ body {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
   gap: 2rem;
   align-items: center;
 }
@@ -14,7 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 30px 40px;
   background-color: var(--black-blue);
   border-radius: 10px;
   margin-bottom: 10px;
@@ -33,12 +32,13 @@ body {
   align-items: center;
   flex-direction: row;
   border-radius: 10px;
+  gap: 5px;
 }
 
 .more-projects h2 {
   color: var(--white);
   font-family: "DM Sans";
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .project-container {
@@ -49,8 +49,10 @@ body {
   overflow: hidden;
   font-family: "DM Sans";
   background-color: var(--black-blue);
-
+  height: 100%;
   border: 2px solid transparent;
+  text-decoration: none;
+  color: var(--white);
 }
 
 .project-image {
@@ -123,17 +125,21 @@ body {
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: repeat(1, 1fr);
-    padding: 30px 0;
+    padding: 20px 0;
   }
   .projects-header h1 {
     font-size: 4rem;
   }
+  .more-projects {
+    font-size: 1rem;
+  }
   .more-projects h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .projects-section {
     font-size: 2rem;
   }
+
   .project-container {
     height: fit-content;
     border: 2px solid #0000;

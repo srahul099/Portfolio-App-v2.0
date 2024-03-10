@@ -4,16 +4,9 @@ body {
 .go-back {
   display: none;
   position: fixed;
-  top: 20px;
+  top: 35px;
   left: 20px;
-  padding: 5px 10px;
-  border-radius: 10px;
   font-family: "DM Sans";
-  font-weight: 200;
-  background-color: var(--dark-blue);
-  z-index: 100;
-  font-size: 10px;
-  color: var(--neon-green);
   text-decoration: none;
 }
 .projectspage-section {
@@ -47,6 +40,8 @@ body {
   font-family: "DM Sans";
   background-color: var(--black-blue);
   border: 2px solid transparent;
+  text-decoration: none;
+  color: var(--white);
 }
 
 .projectpage-image {
@@ -117,11 +112,19 @@ body {
 
 @media (max-width: 768px) {
   .go-back {
+    width: fit-content;
     display: flex;
-    flex-direction: row;
-    justify-items: center;
     align-items: center;
+    justify-content: center;
     gap: 5px;
+    padding: 5px 10px;
+    background-color: var(--black-blue);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--white);
+    transition: 0.3s;
   }
   .projectspage {
     grid-template-columns: repeat(1, 1fr);

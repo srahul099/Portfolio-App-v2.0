@@ -1,0 +1,185 @@
+.prjdesc_Wrapper {
+  margin: 0 100px;
+}
+#back_Btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: var(--black-blue);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--white);
+  transition: 0.3s;
+}
+.projinfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.project_Type {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--neon-green);
+}
+
+.project_Short_Description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  width: 70%;
+  text-align: left;
+  margin: 10px 0;
+}
+.imgbanner {
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+.project_Shortdesc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.project_Heading {
+  font-size: 3rem;
+}
+
+.project_Techstack {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.project_Techstack_heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.project_Techstack_icons {
+  max-height: 40px;
+}
+
+.project_Buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 20px;
+}
+.Buttons {
+  width: fit-content;
+  text-decoration: none;
+  padding: 10px 50px;
+  background-color: var(--neon-green);
+  font-weight: 700;
+  color: var(--black-blue);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.project_Longdesc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 20px;
+  text-align: left;
+  padding: 30px 40px;
+  background-color: var(--black-blue);
+  border-radius: 10px;
+}
+
+.project_Longdesc h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--neon-green);
+  margin-bottom: 10px;
+}
+
+.project_Longdesc ul {
+  margin-left: 30px;
+}
+
+.project_Longdesc h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 5px;
+}
+.project_Longdesc p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(-- grey);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .prjdesc_Wrapper {
+    margin: 20px;
+  }
+  .imgbanner {
+    max-width: 100%;
+  }
+  .projinfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project_Short_Description {
+    margin: 5px 0;
+    width: 90%;
+  }
+  .project_Techstack_heading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .project_Heading {
+    font-size: 2rem;
+  }
+  .project_Buttons {
+    width: 100%;
+  }
+  .Buttons {
+    width: 100%;
+  }
+  .description {
+    margin: 15px;
+  }
+  .project_Short_Description {
+    font-size: 0.9rem;
+  }
+  .project_Longdesc {
+    padding: 20px;
+  }
+  .project_Longdesc ul {
+    margin: 0px;
+  }
+  .project_Longdesc h2 {
+    font-size: 1.5rem;
+  }
+  .project_Longdesc h4 {
+    font-size: 1.1rem;
+  }
+  .project_Longdesc p {
+    font-size: 0.9rem;
+  }
+}

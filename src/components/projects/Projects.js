@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./projects.css";
 
 // banner imports
@@ -8,33 +8,22 @@ import credclonebanner from "../../common/images/banners/Credclone-banner.png";
 import inprogressbanner from "../../common/images/banners/inprogress-banner.png";
 import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
 //banner imports end
-
-import { Player } from "@lordicon/react";
-import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
 import { animateScroll } from "react-scroll";
-const ICON = require("../../common/lotties/more-animation");
 const Projects = () => {
   const scrollToTop = () => {
     animateScroll.scrollToTop();
   };
-  const playerRef = useRef(null);
-  useEffect(() => {
-    playerRef.current?.playFromBeginning();
-  }, []);
   return (
     <div className="projects-section">
       <div className="projects-header">
-        <h1>Projects</h1>
+        <h1>Recent Projects</h1>
         <Link to="/projects" onClick={scrollToTop} className="more-projects">
           <h2>See All</h2>
-          <div className="more-icon">
-            <Player
-              ref={playerRef}
-              icon={ICON}
-              colorize="var(--white)"
-              onComplete={() => playerRef.current?.playFromBeginning()}
-              size={40}
-            />
+          <div className="more">
+            <FontAwesomeIcon icon={faArrowRight} className="more-icon" />
           </div>
         </Link>
       </div>
@@ -48,8 +37,7 @@ const Projects = () => {
             <p>
               Developed to showcase my skills in web development, my portfolio
               website exemplifies proficiency in technologies such as ReactJS,
-              CSS, and Figma. Through these tools, I ensure a seamless and
-              interactive user experience.
+              CSS, and Figma.
             </p>
             <img
               src="https://skillicons.dev/icons?i=react,javascript,css,figma"
@@ -59,7 +47,11 @@ const Projects = () => {
             {/* <button className="demo-btn">Demo</button> */}
           </div>
         </div>
-        <div className="project-container">
+        <NavLink
+          to="/projects/weatherapp"
+          onClick={scrollToTop}
+          className="project-container"
+        >
           <img src={weatherbanner} alt="" className="project-image" />
           <div className="project-desc">
             <h2>Weather App</h2>
@@ -69,14 +61,17 @@ const Projects = () => {
               delivering real-time weather data.
             </p>
             <img
-              src="https://skillicons.dev/icons?i=react,nodejs,express"
+              src="https://skillicons.dev/icons?i=html,css,javascript,nodejs,express"
               alt="tech stack"
               className="project-tech"
             />
-            {/* <button className="demo-btn">Demo</button> */}
           </div>
-        </div>
-        <div className="project-container">
+        </NavLink>
+        <NavLink
+          to="/projects/credclone"
+          onClick={scrollToTop}
+          className="project-container"
+        >
           <img src={credclonebanner} alt="" className="project-image" />
           <div className="project-desc">
             <h2>Cred Clone</h2>
@@ -92,7 +87,7 @@ const Projects = () => {
             />
             {/* <button className="demo-btn">Demo</button> */}
           </div>
-        </div>
+        </NavLink>
         <div className="project-container">
           <img
             src={userauthenticationbanner}
