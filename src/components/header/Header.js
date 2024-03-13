@@ -26,19 +26,14 @@ const Header = () => {
         >
           <h3 className="home-nav">Home</h3>
         </NavLink>
-        <ScrollLink
-          className="Link"
-          to="about-page"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          activeClass="active"
-          onSetActive={() => setCurrentSection("about")}
-          onSetInactive={() => setCurrentSection("home")}
+        <NavLink
+          exact
+          to="/about"
+          className={location.pathname === "/about" ? "active" : ""}
+          onClick={homescrollToTop}
         >
           <h3 className="about-nav">About</h3>
-        </ScrollLink>
+        </NavLink>
         <NavLink
           to="/projects"
           className={location.pathname.startsWith("/projects") ? "active" : ""}

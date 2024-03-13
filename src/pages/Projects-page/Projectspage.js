@@ -5,7 +5,8 @@ import userauthenticationbanner from "../../common/images/banners/UserAunthentic
 import credclonebanner from "../../common/images/banners/Credclone-banner.png";
 import inprogressbanner from "../../common/images/banners/inprogress-banner.png";
 import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
-
+import qrcodegeneratorbanner from "../../common/images/banners/qrcodegenerator-banner.png";
+import playlistgeneratorbanner from "../../common/images/banners/playlistgenerator-banner.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink, useNavigate } from "react-router-dom";
@@ -98,14 +99,18 @@ const Projects = () => {
               original design.
             </p>
             <img
-              src="https://skillicons.dev/icons?i=react,css"
+              src="https://skillicons.dev/icons?i=react,javascript,css"
               alt="tech stack"
               className="projectpage-tech"
             />
             {/* <button className="demo-btn">Demo</button> */}
           </div>
         </NavLink>
-        <div className="projectpage-container">
+        <NavLink
+          to="/projects/UserAuthentication"
+          onClick={scrollToTop}
+          className="projectpage-container"
+        >
           <img
             src={userauthenticationbanner}
             alt=""
@@ -124,7 +129,55 @@ const Projects = () => {
               className="projectpage-tech"
             />
           </div>
-        </div>
+        </NavLink>
+        <NavLink
+          to="/projects/QrGenerator"
+          onClick={scrollToTop}
+          className="projectpage-container"
+        >
+          <img
+            src={qrcodegeneratorbanner}
+            alt=""
+            className="projectpage-image"
+          />
+          <div className="projectpage-desc">
+            <h2>QR Code Generator</h2>
+            <p>
+              Developed a cross-platform authentication system using Qt Creator
+              (QML/C++) for streamlined user experience across desktop, mobile,
+              and web.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=html,css,javascript"
+              alt="tech stack"
+              className="projectpage-tech"
+            />
+          </div>
+        </NavLink>
+        <NavLink
+          to="/projects/PlaylistGenerator"
+          onClick={scrollToTop}
+          className="projectpage-container"
+        >
+          <img
+            src={playlistgeneratorbanner}
+            alt=""
+            className="projectpage-image"
+          />
+          <div className="projectpage-desc">
+            <h2>Playlist Generator</h2>
+            <p>
+              Developed a simple spotify playlist generator implemented using
+              HTML,CSS and Javascript. It selects a random playlist from the
+              array and opens it in a new browser tab.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=html,css,javascript"
+              alt="tech stack"
+              className="projectpage-tech"
+            />
+          </div>
+        </NavLink>
       </div>
     </div>
   );

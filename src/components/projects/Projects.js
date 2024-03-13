@@ -20,12 +20,12 @@ const Projects = () => {
     <div className="projects-section">
       <div className="projects-header">
         <h1>Recent Projects</h1>
-        <Link to="/projects" onClick={scrollToTop} className="more-projects">
+        <NavLink to="/projects" onClick={scrollToTop} className="more-projects">
           <h2>See All</h2>
           <div className="more">
             <FontAwesomeIcon icon={faArrowRight} className="more-icon" />
           </div>
-        </Link>
+        </NavLink>
       </div>
       <div className="projects">
         {/*  */}
@@ -47,6 +47,31 @@ const Projects = () => {
             {/* <button className="demo-btn">Demo</button> */}
           </div>
         </div>
+        <NavLink
+          to="/projects/UserAuthentication"
+          onClick={scrollToTop}
+          className="project-container"
+        >
+          <img
+            src={userauthenticationbanner}
+            alt=""
+            className="project-image"
+          />
+          <div className="project-desc">
+            <h2>User Aunthentication System</h2>
+            <p>
+              Developed a cross-platform authentication system using Qt Creator
+              (QML/C++) for streamlined user experience across desktop, mobile,
+              and web.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=qt,cpp,figma"
+              alt="tech stack"
+              className="project-tech"
+            />
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </NavLink>
         <NavLink
           to="/projects/weatherapp"
           onClick={scrollToTop}
@@ -81,34 +106,13 @@ const Projects = () => {
               original design.
             </p>
             <img
-              src="https://skillicons.dev/icons?i=react,css"
+              src="https://skillicons.dev/icons?i=react,css,javascript"
               alt="tech stack"
               className="project-tech"
             />
             {/* <button className="demo-btn">Demo</button> */}
           </div>
         </NavLink>
-        <div className="project-container">
-          <img
-            src={userauthenticationbanner}
-            alt=""
-            className="project-image"
-          />
-          <div className="project-desc">
-            <h2>User Aunthentication System</h2>
-            <p>
-              Developed a cross-platform authentication system using Qt Creator
-              (QML/C++) for streamlined user experience across desktop, mobile,
-              and web.
-            </p>
-            <img
-              src="https://skillicons.dev/icons?i=qt,cpp"
-              alt="tech stack"
-              className="project-tech"
-            />
-            {/* <button className="demo-btn">Demo</button> */}
-          </div>
-        </div>
       </div>
     </div>
   );

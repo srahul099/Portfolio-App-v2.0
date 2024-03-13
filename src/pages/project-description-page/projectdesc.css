@@ -127,8 +127,17 @@
 .project_Longdesc p {
   font-size: 1rem;
   font-weight: 300;
-  color: var(-- grey);
+  color: var(--grey);
   margin-bottom: 10px;
+}
+
+.inactivebutton {
+  background-color: var(--black-blue);
+  color: var(--grey);
+  cursor: not-allowed;
+}
+.description {
+  margin: 0 15px;
 }
 
 @media (max-width: 768px) {
