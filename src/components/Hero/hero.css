@@ -66,9 +66,12 @@
   z-index: -1;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .heroitems {
-    height: 50rem;
+    height: 70vh;
+  }
+  .infinitescroll {
+    min-height: 100vh;
   }
   .name {
     font-size: 15rem;

@@ -21,6 +21,16 @@
   font-size: 1.5rem;
   font-family: "DM Sans";
 }
+.more-about {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--neon-green);
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--dark-blue);
+  display: flex;
+  margin-left: auto;
+}
 
 @media (max-width: 1024px) {
   .about-container {
@@ -42,5 +52,8 @@
   }
   .about-desc {
     font-size: 1rem;
+  }
+  .more-about {
+    font-size: 0.8rem;
   }
 }
