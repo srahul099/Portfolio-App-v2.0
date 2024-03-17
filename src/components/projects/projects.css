@@ -60,7 +60,7 @@ body {
 
 .project-image {
   border-radius: 15px 15px 0 0;
-  height: 100%;
+  height: fit-content;
 }
 
 .project-desc {
