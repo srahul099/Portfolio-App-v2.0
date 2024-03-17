@@ -5,12 +5,12 @@ import "./projects.css";
 import weatherbanner from "../../common/images/banners/Weather-banner.png";
 import userauthenticationbanner from "../../common/images/banners/UserAunthentication-banner.png";
 import credclonebanner from "../../common/images/banners/Credclone-banner.png";
-import inprogressbanner from "../../common/images/banners/inprogress-banner.png";
+// import inprogressbanner from "../../common/images/banners/inprogress-banner.png";
 import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
 //banner imports end
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { animateScroll } from "react-scroll";
 const Projects = () => {
   const scrollToTop = () => {

@@ -7,12 +7,9 @@ import inprogressbanner from "../../common/images/banners/inprogress-banner.png"
 import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
 import qrcodegeneratorbanner from "../../common/images/banners/qrcodegenerator-banner.png";
 import playlistgeneratorbanner from "../../common/images/banners/playlistgenerator-banner.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { animateScroll } from "react-scroll";
 const Projects = () => {
-  const navigate = useNavigate();
   const scrollToTop = () => {
     animateScroll.scrollToTop();
   };
