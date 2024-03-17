@@ -1,66 +1,57 @@
 import React from "react";
 import "./projects.css";
-import weatherbanner from "./banners/Weather-banner.png";
-import userauthenticationbanner from "./banners/UserAunthentication-banner.png";
-import credclonebanner from "./banners/Credclone-banner.png";
-import inprogressbanner from "./banners/inprogress-banner.png";
+
+// banner imports
+import weatherbanner from "../../common/images/banners/Weather-banner.png";
+import userauthenticationbanner from "../../common/images/banners/UserAunthentication-banner.png";
+import credclonebanner from "../../common/images/banners/Credclone-banner.png";
+// import inprogressbanner from "../../common/images/banners/inprogress-banner.png";
+import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
+//banner imports end
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
+import { animateScroll } from "react-scroll";
 const Projects = () => {
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
   return (
     <div className="projects-section">
-      <h1>Projects</h1>
+      <div className="projects-header">
+        <h1>Recent Projects</h1>
+        <NavLink to="/projects" onClick={scrollToTop} className="more-projects">
+          <h2>See All</h2>
+          <div className="more">
+            <FontAwesomeIcon icon={faArrowRight} className="more-icon" />
+          </div>
+        </NavLink>
+      </div>
       <div className="projects">
+        {/*  */}
+        {/* projects */}
         <div className="project-container">
-          <img src={weatherbanner} alt="" className="project-image" />
+          <img src={portfoliobanner} alt="" className="project-image" />
           <div className="project-desc">
-            <h2>Weather App</h2>
+            <h2>Portfolio</h2>
             <p>
-              Developed a full-stack weather app using NodeJS/Express for
-              server-side logic and ReactJS/Handlebars for interactive frontend,
-              delivering real-time weather data.
+              Developed to showcase my skills in web development, my portfolio
+              website exemplifies proficiency in technologies such as ReactJS,
+              CSS, and Figma.
             </p>
             <img
-              src="https://skillicons.dev/icons?i=react,nodejs,express"
+              src="https://skillicons.dev/icons?i=react,javascript,css,figma"
               alt="tech stack"
               className="project-tech"
             />
             {/* <button className="demo-btn">Demo</button> */}
           </div>
         </div>
-        <div className="project-container">
-          <img src={inprogressbanner} alt="" className="project-image" />
-          <div className="project-desc">
-            <h2>To-Do app</h2>
-            <p>
-              Developed a responsive Todo List web app using ReactJS for
-              enhanced user interaction , with Firebase for real-time data
-              management and synchronization.
-            </p>
-            <img
-              src="https://skillicons.dev/icons?i=react,materialui,firebase"
-              alt="tech stack"
-              className="project-tech"
-            />
-            {/* <button className="demo-btn">Demo</button> */}
-          </div>
-        </div>
-        <div className="project-container">
-          <img src={credclonebanner} alt="" className="project-image" />
-          <div className="project-desc">
-            <h2>Cred Clone</h2>
-            <p>
-              Crafted a responsive CRED Landing Page clone using ReactJS for
-              modularity and interactivity, styled with CSS to match the
-              original design.
-            </p>
-            <img
-              src="https://skillicons.dev/icons?i=react,css"
-              alt="tech stack"
-              className="project-tech"
-            />
-            {/* <button className="demo-btn">Demo</button> */}
-          </div>
-        </div>
-        <div className="project-container">
+        <NavLink
+          to="/projects/UserAuthentication"
+          onClick={scrollToTop}
+          className="project-container"
+        >
           <img
             src={userauthenticationbanner}
             alt=""
@@ -74,14 +65,65 @@ const Projects = () => {
               and web.
             </p>
             <img
-              src="https://skillicons.dev/icons?i=qt,cpp"
+              src="https://skillicons.dev/icons?i=qt,cpp,figma"
               alt="tech stack"
               className="project-tech"
             />
             {/* <button className="demo-btn">Demo</button> */}
           </div>
-        </div>
+        </NavLink>
+        <NavLink
+          to="/projects/weatherapp"
+          onClick={scrollToTop}
+          className="project-container"
+        >
+          <img src={weatherbanner} alt="" className="project-image" />
+          <div className="project-desc">
+            <h2>Weather App</h2>
+            <p>
+              Developed a full-stack weather app using NodeJS/Express for
+              server-side logic and ReactJS/Handlebars for interactive frontend,
+              delivering real-time weather data.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=html,css,javascript,nodejs,express"
+              alt="tech stack"
+              className="project-tech"
+            />
+          </div>
+        </NavLink>
+        <NavLink
+          to="/projects/credclone"
+          onClick={scrollToTop}
+          className="project-container"
+        >
+          <img src={credclonebanner} alt="" className="project-image" />
+          <div className="project-desc">
+            <h2>Cred Clone</h2>
+            <p>
+              Crafted a responsive CRED Landing Page clone using ReactJS for
+              modularity and interactivity, styled with CSS to match the
+              original design.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=react,css,javascript"
+              alt="tech stack"
+              className="project-tech"
+            />
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </NavLink>
       </div>
+      <NavLink
+        to="/projects"
+        onClick={scrollToTop}
+        className="more-projects_mobile"
+      >
+        <h2>See All</h2>
+        <div className="more">
+          <FontAwesomeIcon icon={faArrowRight} className="more-icon" />
+        </div>
+      </NavLink>
     </div>
   );
 };

@@ -90,6 +90,27 @@ form.contact-form {
 form {
   padding: 20px 20px 0 20px;
 }
+@media (max-width: 1025px) {
+  .contact-container {
+    padding: 3rem;
+    gap: 1rem;
+  }
+  .getintouch {
+    width: 100%;
+  }
+  .contact-desc {
+    width: 100%;
+  }
+  .contact-form {
+    padding-right: 0;
+  }
+  .Contactform-App {
+    width: 100%;
+  }
+  .field {
+    font-weight: 500;
+  }
+}
 
 @media (max-width: 768px) {
   .field {

@@ -66,9 +66,12 @@
   z-index: -1;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1367px) {
   .heroitems {
-    height: 50rem;
+    height: 70vh;
+  }
+  .infinitescroll {
+    min-height: 100vh;
   }
   .name {
     font-size: 15rem;
@@ -95,9 +98,10 @@
     justify-content: center;
   }
 }
+
 @media (max-width: 768px) {
   .heroitems {
-    height: 30rem;
+    height: 100vh;
   }
   .name {
     font-size: 10rem;
@@ -122,5 +126,10 @@
   .infinitescroll {
     height: 30rem;
     justify-content: center;
+  }
+}
+@media (max-width: 741px) {
+  .heroitems {
+    height: 70vh;
   }
 }

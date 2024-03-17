@@ -5,6 +5,7 @@
   --neon-green: #d5ff3f;
   --dark-blue: #242938;
   --black-blue: #161b22;
+  --grey: #8b949e;
 }
 @property --angle {
   syntax: "<angle>";

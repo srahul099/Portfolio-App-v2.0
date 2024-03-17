@@ -1,55 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { NavLink, useLocation } from "react-router-dom";
 import "./header.css";
-import { Link } from "react-scroll";
 
 const Header = () => {
+  const location = useLocation();
+  const [currentSection, setCurrentSection] = useState("home");
+  const homescrollToTop = () => {
+    scroll.scrollToTop();
+    setCurrentSection("home");
+  };
+  const projectscrollToTop = () => {
+    scroll.scrollToTop();
+    setCurrentSection("projects");
+  };
+
   return (
     <div className="navbar">
       <div className="navbaritems">
-        <Link
-          className="Link"
-          activeClass="active"
-          to="hero-page"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={400}
+        <NavLink
+          exact
+          to="/"
+          className={location.pathname === "/" ? "active" : ""}
+          onClick={homescrollToTop}
         >
           <h3 className="home-nav">Home</h3>
-        </Link>
-        <Link
-          className="Link"
-          activeClass="active"
-          to="about-page"
-          spy={true}
-          smooth={true}
-          offset={-200}
-          duration={400}
+        </NavLink>
+        <NavLink
+          exact
+          to="/about"
+          className={location.pathname === "/about" ? "active" : ""}
+          onClick={homescrollToTop}
         >
           <h3 className="about-nav">About</h3>
-        </Link>
-        <Link
-          className="Link"
-          activeClass="active"
-          to="projects-page"
-          spy={true}
-          smooth={true}
-          offset={-200}
-          duration={400}
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className={location.pathname.startsWith("/projects") ? "active" : ""}
+          onClick={projectscrollToTop}
         >
           <h3 className="projects-nav">Projects</h3>
-        </Link>
-        <Link
+        </NavLink>
+        <ScrollLink
           className="Link"
-          activeClass="active"
           to="contact-page"
           spy={true}
           smooth={true}
-          offset={-200}
-          duration={400}
+          offset={-100}
+          duration={500}
+          activeClass="active"
+          onSetActive={() => setCurrentSection("contact")}
+          onSetInactive={() => setCurrentSection("home")}
         >
           <h3 className="contact-nav">Contact</h3>
-        </Link>
+        </ScrollLink>
       </div>
     </div>
   );
