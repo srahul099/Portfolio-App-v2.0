@@ -1,6 +1,7 @@
 .navbar {
   padding: 30px 0px 30px 0px;
   background-color: var(--bg-black);
+  width: 100vw;
 }
 
 .Link {
@@ -33,6 +34,8 @@
   color: var(--neon-green) !important;
 }
 
+@media (max-width: 1025px) {
+}
 @media (max-width: 768px) {
   .navbaritems {
     display: none;

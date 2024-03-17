@@ -5,7 +5,11 @@
   gap: 4rem;
   margin: 0 100px;
 }
-
+@media (max-width: 1025px) {
+  .section-flex {
+    margin: 0 50px;
+  }
+}
 @media (max-width: 768px) {
   .section-flex {
     margin: 0 20px;

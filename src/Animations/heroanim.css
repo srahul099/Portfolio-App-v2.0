@@ -1,5 +1,6 @@
 .container {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,23 +106,23 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .container {
-    height: 80vh;
+    height: 99vh;
   }
   .infinitehorizonscroll {
-    width: 100vw;
+    width: 99vw;
   }
   .infinitehorizon1,
   .infinitehorizon2 {
     font-size: 12rem;
-    width: auto;
+    width: 90vw;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    height: 80vh;
+    height: 100vh;
   }
   .infinitehorizonscroll {
     width: 100vw;

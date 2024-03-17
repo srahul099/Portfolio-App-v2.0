@@ -68,7 +68,7 @@
 
 @media (max-width: 1025px) {
   .heroitems {
-    height: 70vh;
+    height: 100vh;
   }
   .infinitescroll {
     min-height: 100vh;
@@ -98,9 +98,10 @@
     justify-content: center;
   }
 }
+
 @media (max-width: 768px) {
   .heroitems {
-    height: 30rem;
+    height: 100vh;
   }
   .name {
     font-size: 10rem;

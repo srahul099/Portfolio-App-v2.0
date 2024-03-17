@@ -104,10 +104,11 @@ body {
   background-color: var(--neon-green);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .projects {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px;
+    margin-top: 20px;
   }
   .project-container {
     border: 2px solid #0000;
@@ -116,9 +117,10 @@ body {
     animation: 8s rotate linear infinite;
   }
   .project-desc {
-    align-items: center;
-    text-align: center;
     gap: 10px;
+  }
+  .project-desc p {
+    margin: 0;
   }
 }
 
