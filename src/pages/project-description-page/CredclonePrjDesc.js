@@ -32,11 +32,17 @@ const CredclonePrjDesc = () => {
             />
           </div>
           <div className="project_Buttons">
-            <a href="" className="Buttons">
+            <a
+              href="https://cred-landing-page-clone.vercel.app"
+              className="Buttons"
+            >
               <FontAwesomeIcon icon={faLaptopCode} />
               Demo
             </a>
-            <a href="" className="Buttons">
+            <a
+              href="https://github.com/srahul099/Cred_Landing-Page_Clone"
+              className="Buttons"
+            >
               <FontAwesomeIcon icon={faGithub} />
               GitHub
             </a>

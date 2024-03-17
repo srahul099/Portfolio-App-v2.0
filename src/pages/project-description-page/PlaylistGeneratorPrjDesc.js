@@ -33,11 +33,17 @@ const PlaylistGeneratorPrjDesc = () => {
             />
           </div>
           <div className="project_Buttons">
-            <a href="" className="Buttons">
+            <a
+              href="https://srahul099.github.io/playlistgenerator.github.io"
+              className="Buttons"
+            >
               <FontAwesomeIcon icon={faLaptopCode} />
               Demo
             </a>
-            <a href="" className="Buttons">
+            <a
+              href="https://github.com/srahul099/playlistgenerator.github.io"
+              className="Buttons"
+            >
               <FontAwesomeIcon icon={faGithub} />
               GitHub
             </a>

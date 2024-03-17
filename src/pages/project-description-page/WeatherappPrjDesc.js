@@ -32,11 +32,17 @@ const WeatherappPrjDesc = () => {
             />
           </div>
           <div className="project_Buttons">
-            <a href="" className="Buttons">
+            <a
+              href="https://rahul-weather-app.onrender.com"
+              className="Buttons"
+            >
               <FontAwesomeIcon icon={faLaptopCode} />
               Demo
             </a>
-            <a href="" className="Buttons">
+            <a
+              href="https://github.com/srahul099/weather-website"
+              className="Buttons"
+            >
               <FontAwesomeIcon icon={faGithub} />
               GitHub
             </a>
