@@ -100,7 +100,9 @@ body {
 @media (max-width: 1367px) {
   .projectspage {
     grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
+  }
+  .projectspage-section {
+    margin: 0 50px;
   }
   .projectpage-container {
     border: 2px solid #0000;
@@ -108,11 +110,30 @@ body {
       linear-gradient(var(--angle), #070707, var(--neon-green)) border-box;
     animation: 8s rotate linear infinite;
   }
+  .projectpage-desc {
+    align-items: flex-start;
+    text-align: left;
+    overflow: hidden;
+    padding: 0;
+    margin: 20px;
+    gap: 5px;
+  }
+  .projectpage-desc p {
+    font-size: 0.8rem;
+    margin: 0;
+    height: fit-content;
+  }
+  .projectpage-desc h2 {
+    font-size: 1.3rem;
+  }
+
+  .projectpage-tech {
+    height: 3.3rem;
+  }
 }
 @media (max-width: 1025px) {
   .projectspage {
     grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
   }
   .projectspage-section {
     margin: 0 50px;

@@ -64,14 +64,16 @@ body {
 }
 
 .project-desc {
-  padding: 20px;
+  margin: 20px;
   display: flex;
+  overflow: hidden;
   align-items: flex-start;
   flex-direction: column;
 }
 
 .project-desc h2 {
   font-size: 24px;
+  white-space: nowrap;
 }
 
 .project-desc p {
@@ -124,7 +126,18 @@ body {
     gap: 10px;
   }
   .project-desc p {
+    font-size: 0.9rem;
     margin: 0;
+    height: fit-content;
+  }
+  .project-desc h2 {
+    font-size: 1.3rem;
+  }
+  .project-image {
+    height: fit-content;
+  }
+  .project-tech {
+    height: 3.3rem;
   }
 }
 
@@ -132,7 +145,7 @@ body {
   .projects {
     grid-template-columns: repeat(1, 1fr);
     margin: 0;
-    padding: 20px 10px;
+    padding: 20px 0;
   }
   .projects-header {
     background-color: transparent;
@@ -182,7 +195,7 @@ body {
     align-items: flex-start;
     text-align: left;
     gap: 5px;
-    padding: 15px 20px;
+    margin: 15px 20px;
   }
   .project-desc p {
     font-size: 0.8rem;

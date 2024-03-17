@@ -101,6 +101,9 @@ form {
   .contact-desc {
     width: 100%;
   }
+  .contact-form {
+    padding-right: 0;
+  }
   .Contactform-App {
     width: 100%;
   }
