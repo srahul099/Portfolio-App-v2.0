@@ -32,10 +32,11 @@
   margin-left: auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1367px) {
   .about-container {
     align-items: flex-start;
     gap: 10px;
+    padding: 40px 60px;
   }
 }
 @media screen and (max-width: 768px) {

@@ -43,11 +43,12 @@ body {
   border: 2px solid transparent;
   text-decoration: none;
   color: var(--white);
+  overflow: hidden;
 }
 
 .projectpage-image {
-  border-radius: 15px 15px 0 0;
-  height: 15rem;
+  height: fit-content;
+  object-fit: cover;
 }
 
 .projectpage-desc {
@@ -65,8 +66,6 @@ body {
   font-family: "DM sans";
   font-weight: 300;
   font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 10px;
   color: var(--grey);
 }
 .projectpage-tech {
