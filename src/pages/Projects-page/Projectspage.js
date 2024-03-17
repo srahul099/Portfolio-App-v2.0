@@ -23,10 +23,10 @@ const Projects = () => {
   return (
     <div className="projectspage-section">
       <div className="projectspage-heading">
-        <div className="go-back back-icon" onClick={() => navigate(-1)}>
+        {/* <div className="go-back back-icon" onClick={() => navigate(-1)}>
           <FontAwesomeIcon icon={faArrowLeft} />
           <h2>Back</h2>
-        </div>
+        </div> */}
 
         <h1>Projects</h1>
       </div>

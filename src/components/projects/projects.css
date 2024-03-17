@@ -40,6 +40,9 @@ body {
   font-family: "DM Sans";
   font-size: 1rem;
 }
+.more-projects_mobile {
+  display: none;
+}
 
 .project-container {
   display: flex;
@@ -76,6 +79,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   margin-top: 10px;
+  color: var(--grey);
 }
 .project-tech {
   padding: 10px 10px 10px 0;
@@ -104,7 +108,7 @@ body {
   background-color: var(--neon-green);
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1367px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
     padding: 0px;
@@ -127,19 +131,41 @@ body {
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: repeat(1, 1fr);
-    padding: 20px 0;
+    margin: 0;
+    padding: 20px 10px;
   }
   .projects-header {
-    padding: 20px 20px;
+    background-color: transparent;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
   }
   .projects-header h1 {
+    padding: 20px 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--black-blue);
     font-size: 4rem;
   }
   .more-projects {
-    font-size: 1rem;
+    display: none;
   }
-  .more-projects h2 {
-    font-size: 1rem;
+  .more-projects_mobile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.7rem;
+    border: 1px solid var(--neon-green);
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 10px;
+    color: var(--white);
+    background-color: var(--black-blue);
+  }
+  .more-projects_mobile h2 {
+    font-size: 0.8rem;
   }
   .projects-section {
     font-size: 2rem;
@@ -155,13 +181,17 @@ body {
   .project-desc {
     align-items: flex-start;
     text-align: left;
-
-    gap: 10px;
+    gap: 5px;
+    padding: 15px 20px;
   }
   .project-desc p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .project-desc h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .project-tech {
+    padding: 10px 10px 10px 0;
+    height: 3.3rem;
   }
 }

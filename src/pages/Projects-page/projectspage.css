@@ -10,7 +10,7 @@ body {
   text-decoration: none;
 }
 .projectspage-section {
-  padding: 20px 100px;
+  margin: 0 100px;
 }
 
 .projectspage-heading {
@@ -68,7 +68,6 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   color: var(--grey);
-  height: 6rem;
 }
 .projectpage-tech {
   padding: 10px 10px 10px 0;
@@ -96,10 +95,13 @@ body {
   text-transform: uppercase;
   background-color: var(--neon-green);
 }
-@media (max-width: 1024px) {
+@media (max-width: 1367px) {
   .projectspage {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+  .projectspage-section {
+    margin: 0 50px;
   }
   .projectpage-container {
     border: 2px solid #0000;
@@ -108,9 +110,10 @@ body {
     animation: 8s rotate linear infinite;
   }
   .projectpage-desc {
-    align-items: center;
-    text-align: center;
     gap: 10px;
+  }
+  .projectpage-image {
+    height: 100%;
   }
 }
 
@@ -136,7 +139,7 @@ body {
   }
   .projectspage-section {
     font-size: 2rem;
-    padding: 0;
+    margin: 0;
   }
   .projectspage-heading {
     text-align: center;
@@ -156,12 +159,18 @@ body {
   .projectpage-desc {
     align-items: flex-start;
     text-align: left;
-    gap: 10px;
+    gap: 5px;
   }
   .projectpage-desc p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin: 0;
+    height: fit-content;
   }
   .projectpage-desc h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .projectpage-tech {
+    height: 3.3rem;
   }
 }

@@ -114,6 +114,16 @@ const Projects = () => {
           </div>
         </NavLink>
       </div>
+      <NavLink
+        to="/projects"
+        onClick={scrollToTop}
+        className="more-projects_mobile"
+      >
+        <h2>See All</h2>
+        <div className="more">
+          <FontAwesomeIcon icon={faArrowRight} className="more-icon" />
+        </div>
+      </NavLink>
     </div>
   );
 };

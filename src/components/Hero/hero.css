@@ -66,9 +66,9 @@
   z-index: -1;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1366px) {
   .heroitems {
-    height: 100vh;
+    height: 70vh;
   }
   .infinitescroll {
     min-height: 100vh;
@@ -126,5 +126,10 @@
   .infinitescroll {
     height: 30rem;
     justify-content: center;
+  }
+}
+@media (max-width: 741px) {
+  .heroitems {
+    height: 70vh;
   }
 }
