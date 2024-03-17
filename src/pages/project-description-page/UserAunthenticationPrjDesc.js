@@ -35,7 +35,10 @@ const UserAuthenticationPrjDesc = () => {
               <FontAwesomeIcon icon={faLaptopCode} />
               Demo
             </div>
-            <a href="" className="Buttons">
+            <a
+              href="https://github.com/srahul099/User-Authertication-App"
+              className="Buttons"
+            >
               <FontAwesomeIcon icon={faGithub} />
               GitHub
             </a>

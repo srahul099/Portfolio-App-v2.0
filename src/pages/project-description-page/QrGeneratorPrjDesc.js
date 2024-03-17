@@ -33,11 +33,17 @@ const QrGeneratorPrjDesc = () => {
             />
           </div>
           <div className="project_Buttons">
-            <a href="" className="Buttons">
+            <a
+              href="https://srahul099.github.io/qrcode-generator"
+              className="Buttons"
+            >
               <FontAwesomeIcon icon={faLaptopCode} />
               Demo
             </a>
-            <a href="" className="Buttons">
+            <a
+              href="https://github.com/srahul099/qrcode-generator"
+              className="Buttons"
+            >
               <FontAwesomeIcon icon={faGithub} />
               GitHub
             </a>
