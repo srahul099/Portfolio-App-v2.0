@@ -12,12 +12,17 @@
   text-align: center;
   height: 100%;
 }
+
 body::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
 }
-
+.work_in_progress {
+  padding: 5px;
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
 .Header {
   position: sticky;
   top: 0;

@@ -12,13 +12,21 @@ import UserAuthenticationPrjDesc from "./pages/project-description-page/UserAunt
 import PlaylistGeneratorPrjDesc from "./pages/project-description-page/PlaylistGeneratorPrjDesc";
 import QrGeneratorPrjDesc from "./pages/project-description-page/QrGeneratorPrjDesc";
 import AboutPage from "./pages/aboutpage/AboutPage";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGear } from "@fortawesome/free-solid-svg-icons";
 function App() {
   return (
     <div className="App">
       <ProgressBar bgcolor="var(--neon-green)" duration="0.8" />
+
       <Router>
         <div className="Header">
+          <div className="work_in_progress">
+            <p>
+              This website is under development{" "}
+              <FontAwesomeIcon icon={faGear} spin />
+            </p>
+          </div>
           <Header />
         </div>
         <Routes>
