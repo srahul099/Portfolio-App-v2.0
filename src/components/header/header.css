@@ -39,6 +39,10 @@ header {
 @media (max-width: 1025px) {
 }
 @media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: flex-end;
+  }
   .navbar {
     padding: 10px 0;
   }
