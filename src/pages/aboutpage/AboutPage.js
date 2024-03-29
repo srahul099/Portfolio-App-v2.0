@@ -1,25 +1,15 @@
 import React from "react";
 import "./aboutpage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faFile } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
 import profilepicture from "../../common/images/ProfilePicture.jpg";
 import { useNavigate } from "react-router-dom";
 import AboutCarousel from "./AboutCarousel";
 import SocialLinks from "./SocialLinks";
 const AboutPage = () => {
-  const navigate = useNavigate();
   return (
     <div className="aboutpage_Wrapper">
       <div className="about_Wrapper">
-        {/* <div className="about-go-back" onClick={() => navigate(-1)}>
-          <FontAwesomeIcon icon={faArrowLeft} />
-          <h2>Back</h2>
-        </div> */}
         <div className="about_Heading">About</div>
         <div className="about_container">
           <div className="about_L">

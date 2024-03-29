@@ -6,10 +6,10 @@ const Heroanim = () => {
       <div className="infinitehorizonscroll">
         <div className="infinitehorizon1">
           <span>
-            UX Designer UX Designer UX Designer UX Designer UX Designer
+            UI Designer UI Designer UI Designer UI Designer UI Designer
           </span>
           <span>
-            UX Designer UX Designer UX Designer UX Designer UX Designer
+            UI Designer UI Designer UI Designer UI Designer UI Designer
           </span>
         </div>
         <div className="infinitehorizon2">
