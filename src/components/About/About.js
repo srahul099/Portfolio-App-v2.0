@@ -1,7 +1,11 @@
 import React from "react";
 import "./about.css";
 import { NavLink } from "react-router-dom";
+import { animateScroll } from "react-scroll";
 const About = () => {
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
   return (
     <div className="about_Container">
       <h2 className="about-Heading">About</h2>
@@ -16,7 +20,7 @@ const About = () => {
         life!
       </p>
       <div className="more_About">
-        <NavLink to="/about" className="more_About">
+        <NavLink to="/about" className="more_About" onClick={scrollToTop}>
           More..
         </NavLink>
       </div>

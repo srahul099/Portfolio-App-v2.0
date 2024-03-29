@@ -17,7 +17,7 @@ const PlaylistGeneratorPrjDesc = () => {
         <img src={playlistgeneratorbanner} alt="" className="imgbanner" />
         <div className="project_Shortdesc">
           <h1 className="project_Heading">Playlist Generator</h1>
-          <p className="project_Type">Front-End</p>
+          <p className="project_Type">Frontend</p>
           <p className="project_Short_Description">
             This is a simple Spotify playlist generator implemented in
             JavaScript. The script contains an array of Spotify playlist URLs.

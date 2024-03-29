@@ -7,6 +7,7 @@ import userauthenticationbanner from "../../common/images/banners/UserAunthentic
 import credclonebanner from "../../common/images/banners/Credclone-banner.png";
 // import inprogressbanner from "../../common/images/banners/inprogress-banner.png";
 import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
+import ISRObanner from "../../common/images/banners/ISRO-banner.png";
 //banner imports end
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -30,7 +31,11 @@ const Projects = () => {
       <div className="projects">
         {/*  */}
         {/* projects */}
-        <div className="project-container">
+        <NavLink
+          to="/projects/Portfolio"
+          onClick={scrollToTop}
+          className="projectpage-container"
+        >
           <img src={portfoliobanner} alt="" className="project-image" />
           <div className="project-desc">
             <h2>Portfolio</h2>
@@ -47,7 +52,29 @@ const Projects = () => {
             />
             {/* <button className="demo-btn">Demo</button> */}
           </div>
-        </div>
+        </NavLink>
+        <NavLink
+          to="/projects/Isrowebsiteredesign"
+          onClick={scrollToTop}
+          className="projectpage-container"
+        >
+          <img src={ISRObanner} alt="" className="project-image" />
+          <div className="project-desc">
+            <h2>ISRO Website Redesign</h2>
+            <div className="project_type">UI Design</div>
+            <p>
+              Revamped the whole ISRO website with a modern and clean design
+              which emphasises the importance of ISRO's work and easily
+              accesible information.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=figma"
+              alt="tech stack"
+              className="project-tech"
+            />
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </NavLink>
         <NavLink
           to="/projects/UserAuthentication"
           onClick={scrollToTop}

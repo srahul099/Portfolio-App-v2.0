@@ -17,7 +17,7 @@ const QrGeneratorPrjDesc = () => {
         <img src={Qrgeneratorbanner} alt="" className="imgbanner" />
         <div className="project_Shortdesc">
           <h1 className="project_Heading">Qr Generator</h1>
-          <p className="project_Type">Front-End</p>
+          <p className="project_Type">Frontend</p>
           <p className="project_Short_Description">
             This project is a QR Code generator developed using JavaScript. It
             allows users to input a URL and generates a QR code for that URL.
