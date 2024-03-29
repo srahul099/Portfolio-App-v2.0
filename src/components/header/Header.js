@@ -62,7 +62,7 @@ const Header = () => {
       </div>
       <header>
         <div className="hamburger" onClick={toggleNav}>
-          <Hamburger />
+          <Hamburger toggled={isOpen} toggle={setIsOpen} />
         </div>
 
         <div className={`nav-links ${isOpen ? "" : "closed"}`}>
@@ -71,14 +71,20 @@ const Header = () => {
               exact
               to="/"
               className={location.pathname === "/" ? "active" : ""}
-              onClick={homescrollToTop}
+              onClick={() => {
+                homescrollToTop();
+                toggleNav();
+              }}
             >
               <h3 className="home-nav">Home</h3>
             </NavLink>
             <NavLink
               to="/about"
               className={location.pathname === "/about" ? "active" : ""}
-              onClick={homescrollToTop}
+              onClick={() => {
+                homescrollToTop();
+                toggleNav();
+              }}
             >
               <h3 className="about-nav">About</h3>
             </NavLink>
@@ -87,7 +93,10 @@ const Header = () => {
               className={
                 location.pathname.startsWith("/projects") ? "active" : ""
               }
-              onClick={projectscrollToTop}
+              onClick={() => {
+                projectscrollToTop();
+                toggleNav();
+              }}
             >
               <h3 className="projects-nav">Projects</h3>
             </NavLink>
