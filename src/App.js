@@ -16,6 +16,8 @@ import AboutPage from "./pages/aboutpage/AboutPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleExclamation, faGear } from "@fortawesome/free-solid-svg-icons";
 import Contactpage from "./pages/contactpage/Contactpage";
+import PortfolioPrjDesc from "./pages/project-description-page/PortfolioPrjDesc";
+import IsroPrjDesc from "./pages/project-description-page/IsroPrjDesc";
 
 function App() {
   return (
@@ -63,6 +65,11 @@ function App() {
               path="/projects/QrGenerator"
               element={<QrGeneratorPrjDesc />}
             />
+            <Route
+              path="/projects/Isrowebsiteredesign"
+              element={<IsroPrjDesc />}
+            />
+            <Route path="/projects/Portfolio" element={<PortfolioPrjDesc />} />
             <Route path="/contact" element={<Contactpage />} />
           </Routes>
           <Footer />

@@ -181,7 +181,8 @@ body {
   .projectspage-heading {
     text-align: center;
     font-size: 2rem;
-    border-radius: 0;
+    border-radius: 10px;
+    margin: 0 20px 20px 20px;
   }
   .projectspage {
     padding: 0 30px;

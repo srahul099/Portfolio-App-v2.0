@@ -20,15 +20,14 @@ const Projects = () => {
   return (
     <div className="projectspage-section">
       <div className="projectspage-heading">
-        {/* <div className="go-back back-icon" onClick={() => navigate(-1)}>
-          <FontAwesomeIcon icon={faArrowLeft} />
-          <h2>Back</h2>
-        </div> */}
-
         <h1>Projects</h1>
       </div>
       <div className="projectspage">
-        <div className="projectpage-container">
+        <NavLink
+          to="/projects/Portfolio"
+          onClick={scrollToTop}
+          className="projectpage-container"
+        >
           <img src={portfoliobanner} alt="" className="projectpage-image" />
           <div className="projectpage-desc">
             <h2>Portfolio</h2>
@@ -45,7 +44,7 @@ const Projects = () => {
             />
             {/* <button className="demo-btn">Demo</button> */}
           </div>
-        </div>
+        </NavLink>
         <NavLink
           to="/projects/weatherapp"
           onClick={scrollToTop}
