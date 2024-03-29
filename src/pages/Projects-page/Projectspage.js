@@ -32,7 +32,8 @@ const Projects = () => {
           <img src={portfoliobanner} alt="" className="projectpage-image" />
           <div className="projectpage-desc">
             <h2>Portfolio</h2>
-            <p>
+            <p className="project_type">Frontend</p>
+            <p className="proj__descrption">
               Developed to showcase my skills in web development, my portfolio
               website exemplifies proficiency in technologies such as ReactJS,
               CSS, and Figma.
@@ -53,7 +54,8 @@ const Projects = () => {
           <img src={weatherbanner} alt="" className="projectpage-image" />
           <div className="projectpage-desc">
             <h2>Weather App</h2>
-            <p>
+            <p className="project_type">Full Stack</p>
+            <p className="proj__descrption">
               Developed a full-stack weather app using NodeJS/Express for
               server-side logic and ReactJS/Handlebars for interactive frontend,
               delivering real-time weather data.
@@ -69,7 +71,8 @@ const Projects = () => {
           <img src={inprogressbanner} alt="" className="projectpage-image" />
           <div className="projectpage-desc">
             <h2>To-Do app</h2>
-            <p>
+            <p className="project_type">Full Stack</p>
+            <p className="proj__descrption">
               Developed a responsive Todo List web app using ReactJS for
               enhanced user interaction , with Firebase for real-time data
               management and synchronization.
@@ -90,7 +93,8 @@ const Projects = () => {
           <img src={credclonebanner} alt="" className="projectpage-image" />
           <div className="projectpage-desc">
             <h2>Cred Clone</h2>
-            <p>
+            <p className="project_type">Frontend</p>
+            <p className="proj__descrption">
               Crafted a responsive CRED Landing Page clone using ReactJS for
               modularity and interactivity, styled with CSS to match the
               original design.
@@ -115,7 +119,8 @@ const Projects = () => {
           />
           <div className="projectpage-desc">
             <h2>User Aunthentication System</h2>
-            <p>
+            <p className="project_type">Full Stack</p>
+            <p className="proj__descrption">
               Developed a cross-platform authentication system using Qt Creator
               (QML/C++) for streamlined user experience across desktop, mobile,
               and web.
@@ -139,10 +144,11 @@ const Projects = () => {
           />
           <div className="projectpage-desc">
             <h2>QR Code Generator</h2>
-            <p>
-              Developed a cross-platform authentication system using Qt Creator
-              (QML/C++) for streamlined user experience across desktop, mobile,
-              and web.
+            <p className="project_type">Frontend</p>
+            <p className="proj__descrption">
+              Developed a simple QR code generator using HTML, CSS, and
+              Javascript which takes a user input and generates a QR code for it
+              using google charts API.
             </p>
             <img
               src="https://skillicons.dev/icons?i=html,css,javascript"
@@ -163,7 +169,8 @@ const Projects = () => {
           />
           <div className="projectpage-desc">
             <h2>Playlist Generator</h2>
-            <p>
+            <p className="project_type">Frontend</p>
+            <p className="proj__descrption">
               Developed a simple spotify playlist generator implemented using
               HTML,CSS and Javascript. It selects a random playlist from the
               array and opens it in a new browser tab.

@@ -109,7 +109,10 @@ body {
   text-transform: uppercase;
   background-color: var(--neon-green);
 }
-
+.project_type {
+  color: var(--neon-green);
+  margin-top: 5px;
+}
 @media (max-width: 1367px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);

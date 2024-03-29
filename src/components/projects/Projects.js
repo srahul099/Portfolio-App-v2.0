@@ -34,6 +34,7 @@ const Projects = () => {
           <img src={portfoliobanner} alt="" className="project-image" />
           <div className="project-desc">
             <h2>Portfolio</h2>
+            <div className="project_type">Frontend</div>
             <p>
               Developed to showcase my skills in web development, my portfolio
               website exemplifies proficiency in technologies such as ReactJS,
@@ -59,6 +60,7 @@ const Projects = () => {
           />
           <div className="project-desc">
             <h2>User Aunthentication System</h2>
+            <div className="project_type">Full Stack</div>
             <p>
               Developed a cross-platform authentication system using Qt Creator
               (QML/C++) for streamlined user experience across desktop, mobile,
@@ -80,6 +82,7 @@ const Projects = () => {
           <img src={weatherbanner} alt="" className="project-image" />
           <div className="project-desc">
             <h2>Weather App</h2>
+            <div className="project_type">Full Stack</div>
             <p>
               Developed a full-stack weather app using NodeJS/Express for
               server-side logic and ReactJS/Handlebars for interactive frontend,
@@ -100,6 +103,7 @@ const Projects = () => {
           <img src={credclonebanner} alt="" className="project-image" />
           <div className="project-desc">
             <h2>Cred Clone</h2>
+            <div className="project_type">Frontend</div>
             <p>
               Crafted a responsive CRED Landing Page clone using ReactJS for
               modularity and interactivity, styled with CSS to match the

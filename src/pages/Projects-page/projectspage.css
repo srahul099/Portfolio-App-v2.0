@@ -64,12 +64,16 @@ body {
   white-space: nowrap;
 }
 
-.projectpage-desc p {
+.proj__descrption {
   font-family: "DM sans";
   font-weight: 300;
   font-size: 18px;
   margin: 5px 0px;
   color: var(--grey);
+}
+.project_type {
+  color: var(--neon-green);
+  margin-top: 5px;
 }
 .projectpage-tech {
   padding: 10px 10px 10px 0;
@@ -97,6 +101,7 @@ body {
   text-transform: uppercase;
   background-color: var(--neon-green);
 }
+
 @media (max-width: 1367px) {
   .projectspage {
     grid-template-columns: repeat(3, 1fr);
