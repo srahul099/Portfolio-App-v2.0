@@ -27,7 +27,7 @@ const QrGeneratorPrjDesc = () => {
           <div className="project_Techstack">
             <h3 className="project_Techstack_heading">Tech Stack</h3>
             <img
-              src="https://skillicons.dev/icons?i=react,css,javascript"
+              src="https://skillicons.dev/icons?i=html,css,javascript"
               alt="tech stack"
               className="project_Techstack_icons"
             />
