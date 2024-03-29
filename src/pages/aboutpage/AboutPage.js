@@ -9,6 +9,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import profilepicture from "../../common/images/ProfilePicture.jpg";
 import { useNavigate } from "react-router-dom";
+import AboutCarousel from "./AboutCarousel";
+import SocialLinks from "./SocialLinks";
 const AboutPage = () => {
   const navigate = useNavigate();
   return (
@@ -71,6 +73,10 @@ const AboutPage = () => {
               </a>
             </div>
           </div>
+        </div>
+        <div className="carousel_sociallinks_container">
+          <AboutCarousel />
+          <SocialLinks />
         </div>
       </div>
     </div>
