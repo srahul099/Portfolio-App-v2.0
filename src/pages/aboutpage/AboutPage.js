@@ -3,7 +3,6 @@ import "./aboutpage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import profilepicture from "../../common/images/ProfilePicture.jpg";
-import { useNavigate } from "react-router-dom";
 import AboutCarousel from "./AboutCarousel";
 import SocialLinks from "./SocialLinks";
 const AboutPage = () => {

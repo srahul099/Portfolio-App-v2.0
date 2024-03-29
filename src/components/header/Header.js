@@ -46,19 +46,13 @@ const Header = () => {
         >
           <h3 className="projects-nav">Projects</h3>
         </NavLink>
-        <ScrollLink
-          className="Link"
-          to="contact-page"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          activeClass="active"
-          onSetActive={() => setCurrentSection("contact")}
-          onSetInactive={() => setCurrentSection("home")}
+        <NavLink
+          to="/contact"
+          className={location.pathname.startsWith("/contact") ? "active" : ""}
+          onClick={projectscrollToTop}
         >
           <h3 className="contact-nav">Contact</h3>
-        </ScrollLink>
+        </NavLink>
       </div>
       <header>
         <div className="hamburger" onClick={toggleNav}>
@@ -100,19 +94,18 @@ const Header = () => {
             >
               <h3 className="projects-nav">Projects</h3>
             </NavLink>
-            <ScrollLink
-              className="Link"
-              to="contact-page"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-              activeClass="active"
-              onSetActive={() => setCurrentSection("contact")}
-              onSetInactive={() => setCurrentSection("home")}
+            <NavLink
+              to="/contact"
+              className={
+                location.pathname.startsWith("/contact") ? "active" : ""
+              }
+              onClick={() => {
+                projectscrollToTop();
+                toggleNav();
+              }}
             >
               <h3 className="contact-nav">Contact</h3>
-            </ScrollLink>
+            </NavLink>
           </div>
         </div>
       </header>

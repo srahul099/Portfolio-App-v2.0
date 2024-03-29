@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect } from "react";
+import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
@@ -15,6 +15,7 @@ import QrGeneratorPrjDesc from "./pages/project-description-page/QrGeneratorPrjD
 import AboutPage from "./pages/aboutpage/AboutPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleExclamation, faGear } from "@fortawesome/free-solid-svg-icons";
+import Contactpage from "./pages/contactpage/Contactpage";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
               path="/projects/QrGenerator"
               element={<QrGeneratorPrjDesc />}
             />
+            <Route path="/contact" element={<Contactpage />} />
           </Routes>
           <Footer />
         </Router>
