@@ -112,6 +112,7 @@ body {
 .project_type {
   color: var(--neon-green);
   margin-top: 5px;
+  font-size: 1rem;
 }
 @media (max-width: 1367px) {
   .projects {
@@ -209,5 +210,8 @@ body {
   .project-tech {
     padding: 10px 10px 10px 0;
     height: 3.3rem;
+  }
+  .project_type {
+    font-size: 0.8rem;
   }
 }
