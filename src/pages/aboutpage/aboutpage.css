@@ -32,7 +32,7 @@ a {
   gap: 15px;
 }
 .about_Image {
-  height: 380px;
+  height: 28rem;
   border-radius: 10px;
 }
 
@@ -92,8 +92,84 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: var(--black-blue);
+}
+
+.carousel_sociallinks_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.skills_Container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  text-align: left;
+  padding: 30px;
+  background-color: var(--black-blue);
+  border-radius: 10px;
+}
+.carousel {
+  display: flex;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    var(--bg-black) 20%,
+    var(--bg-black) 80%,
+    transparent
+  );
+}
+.carousel-content {
+  white-space: nowrap;
+  width: 200%;
+  height: fit-content;
+  animation: slide 15s infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.carousel-content img {
+  height: 50px;
+  margin: 0 10px;
+}
+.carousel:hover .carousel-content {
+  animation-play-state: paused;
+}
+
+.SocialLinks_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: var(--black-blue);
+  border-radius: 10px;
+}
+.Socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-size: 2.5rem;
+}
+
+.Socials a {
+  color: var(--neon-green);
 }
 @media (max-width: 1025px) {
+  .about_Wrapper {
+    margin: 0 50px;
+  }
   .about_container {
     padding: 20px 20px;
     flex-direction: column;
@@ -112,7 +188,21 @@ a {
     justify-content: center;
   }
 }
+
 @media (max-width: 768px) {
+  .skills_Container {
+    width: 100%;
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+  .carousel-content img {
+    height: 40px;
+    margin: 0 5px;
+  }
+  .carousel-content {
+    white-space: nowrap;
+    width: 300%;
+  }
   .about_Wrapper {
     margin: 20px 20px;
     align-items: flex-start;
@@ -123,7 +213,7 @@ a {
     padding: 20px 20px;
   }
   .about_Image {
-    height: 320px;
+    height: 280px;
     border-radius: 5px;
   }
   .about_Heading {
@@ -152,5 +242,11 @@ a {
     border: 1px solid var(--neon-green);
     padding: 10px 20px;
     border-radius: 5px;
+  }
+  .carousel_sociallinks_container {
+    flex-direction: column;
+  }
+  .Socials {
+    font-size: 2rem;
   }
 }

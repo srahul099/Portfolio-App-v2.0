@@ -3,9 +3,9 @@ import "./about.css";
 import { NavLink } from "react-router-dom";
 const About = () => {
   return (
-    <div className="about-container">
-      <h2 className="about-heading">About</h2>
-      <p className="about-desc">
+    <div className="about_Container">
+      <h2 className="about-Heading">About</h2>
+      <p className="about_Desc">
         Hi there! I'm Rahul, a third-year Computer Science student at SRM
         Institute with a passion for crafting user-centric experiences. I
         specialize in UI/UX design, front-end development, and graphic design,
@@ -15,8 +15,8 @@ const About = () => {
         and exploring music. Let's connect and bring your digital visions to
         life!
       </p>
-      <div className="more-about">
-        <NavLink to="/about" className="more-about">
+      <div className="more_About">
+        <NavLink to="/about" className="more_About">
           More..
         </NavLink>
       </div>

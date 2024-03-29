@@ -30,11 +30,29 @@ body::-webkit-scrollbar {
   width: 100vw;
 }
 
+.Screen_Small {
+  display: none;
+}
 @media (max-width: 768px) {
-  .Header {
+  /* .Header {
+    display: none;
+  } */
+}
+
+@media (max-width: 320px) {
+  .main_Screen {
     display: none;
   }
-  .customcursor-display {
-    display: none;
+  .Screen_Small {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 30px;
+    margin-top: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 80%;
+    border-radius: 20px;
+    background-color: var(--dark-blue);
   }
 }

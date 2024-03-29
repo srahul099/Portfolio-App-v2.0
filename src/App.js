@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
@@ -13,44 +14,61 @@ import PlaylistGeneratorPrjDesc from "./pages/project-description-page/PlaylistG
 import QrGeneratorPrjDesc from "./pages/project-description-page/QrGeneratorPrjDesc";
 import AboutPage from "./pages/aboutpage/AboutPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGear } from "@fortawesome/free-solid-svg-icons";
+import { faCircleExclamation, faGear } from "@fortawesome/free-solid-svg-icons";
+import Contactpage from "./pages/contactpage/Contactpage";
+
 function App() {
   return (
     <div className="App">
-      <ProgressBar bgcolor="var(--neon-green)" duration="0.8" />
-
-      <Router>
-        <div className="Header">
-          <div className="work_in_progress">
-            <p>
-              This website is under development{" "}
-              <FontAwesomeIcon icon={faGear} spin />
-            </p>
-          </div>
-          <Header />
+      <div className="Screen_Small">
+        <div>
+          <FontAwesomeIcon
+            icon={faCircleExclamation}
+            style={{ color: "#ffffff" }}
+          />
         </div>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/projects" element={<Projectspage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects/weatherapp" element={<WeatherappPrjDesc />} />
-          <Route path="/projects/credclone" element={<CredclonePrjDesc />} />
-          <Route
-            path="/projects/UserAuthentication"
-            element={<UserAuthenticationPrjDesc />}
-          />
-          <Route
-            path="/projects/PlaylistGenerator"
-            element={<PlaylistGeneratorPrjDesc />}
-          />
-          <Route
-            path="/projects/QrGenerator"
-            element={<QrGeneratorPrjDesc />}
-          />
-        </Routes>
-        <Footer />
-      </Router>
-      <SpeedInsights />
+        <div>Display too small</div>
+      </div>
+      <div className="main_Screen">
+        <ProgressBar bgcolor="var(--neon-green)" duration="0.8" />
+
+        <Router>
+          <div className="Header">
+            <div className="work_in_progress">
+              <p>
+                This website is under development{" "}
+                <FontAwesomeIcon icon={faGear} spin />
+              </p>
+            </div>
+            <Header />
+          </div>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/projects" element={<Projectspage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route
+              path="/projects/weatherapp"
+              element={<WeatherappPrjDesc />}
+            />
+            <Route path="/projects/credclone" element={<CredclonePrjDesc />} />
+            <Route
+              path="/projects/UserAuthentication"
+              element={<UserAuthenticationPrjDesc />}
+            />
+            <Route
+              path="/projects/PlaylistGenerator"
+              element={<PlaylistGeneratorPrjDesc />}
+            />
+            <Route
+              path="/projects/QrGenerator"
+              element={<QrGeneratorPrjDesc />}
+            />
+            <Route path="/contact" element={<Contactpage />} />
+          </Routes>
+          <Footer />
+        </Router>
+        <SpeedInsights />
+      </div>
     </div>
   );
 }
