@@ -7,6 +7,8 @@ import inprogressbanner from "../../common/images/banners/inprogress-banner.png"
 import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
 import qrcodegeneratorbanner from "../../common/images/banners/qrcodegenerator-banner.png";
 import playlistgeneratorbanner from "../../common/images/banners/playlistgenerator-banner.png";
+import ISRObanner from "../../common/images/banners/ISRO-banner.png";
+
 import { NavLink } from "react-router-dom";
 import { animateScroll } from "react-scroll";
 const Projects = () => {
@@ -20,7 +22,7 @@ const Projects = () => {
   return (
     <div className="projectspage-section">
       <div className="projectspage-heading">
-        <h1>Projects</h1>
+        <h1>PROJECTS</h1>
       </div>
       <div className="projectspage">
         <NavLink
@@ -41,6 +43,28 @@ const Projects = () => {
               src="https://skillicons.dev/icons?i=react,javascript,css,figma"
               alt="tech stack"
               className="projectpage-tech"
+            />
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </NavLink>
+        <NavLink
+          to="/projects/Isrowebsiteredesign"
+          onClick={scrollToTop}
+          className="projectpage-container"
+        >
+          <img src={ISRObanner} alt="" className="project-image" />
+          <div className="project-desc">
+            <h2>ISRO Website Redesign</h2>
+            <div className="project_type">UI Design</div>
+            <p>
+              Revamped the whole ISRO website with a modern and clean design
+              which emphasises the importance of ISRO's work and easily
+              accesible information.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=figma"
+              alt="tech stack"
+              className="project-tech"
             />
             {/* <button className="demo-btn">Demo</button> */}
           </div>

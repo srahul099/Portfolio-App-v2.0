@@ -9,7 +9,7 @@ const AboutPage = () => {
   return (
     <div className="aboutpage_Wrapper">
       <div className="about_Wrapper">
-        <div className="about_Heading">About</div>
+        <div className="about_Heading">ABOUT</div>
         <div className="about_container">
           <div className="about_L">
             <img src={profilepicture} alt="" className="about_Image" />
@@ -52,7 +52,7 @@ const AboutPage = () => {
             </p>
             <div className="about_Buttons">
               <a
-                href="https://drive.google.com/uc?export=download&id=1Apxy3xWOrlUVgZ1gtZPj-f3HN7DHa2oJ"
+                href="https://drive.google.com/uc?export=download&id=1SAWQg0rKhkxOWiLXpyPyYTHl0M31ujGs"
                 download="Rahul-Resume.pdf"
               >
                 <div className="resume_Download">

@@ -35,6 +35,7 @@ const WeatherappPrjDesc = () => {
             <a
               href="https://rahul-weather-app.onrender.com"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faLaptopCode} />
               Demo
@@ -42,6 +43,7 @@ const WeatherappPrjDesc = () => {
             <a
               href="https://github.com/srahul099/weather-website"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faGithub} />
               GitHub

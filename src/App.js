@@ -36,12 +36,12 @@ function App() {
 
         <Router>
           <div className="Header">
-            <div className="work_in_progress">
+            {/* <div className="work_in_progress">
               <p>
                 This website is under development{" "}
                 <FontAwesomeIcon icon={faGear} spin />
               </p>
-            </div>
+            </div> */}
             <Header />
           </div>
           <Routes>
