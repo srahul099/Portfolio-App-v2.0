@@ -36,6 +36,7 @@ const QrGeneratorPrjDesc = () => {
             <a
               href="https://srahul099.github.io/qrcode-generator"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faLaptopCode} />
               Demo
@@ -43,6 +44,7 @@ const QrGeneratorPrjDesc = () => {
             <a
               href="https://github.com/srahul099/qrcode-generator"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faGithub} />
               GitHub

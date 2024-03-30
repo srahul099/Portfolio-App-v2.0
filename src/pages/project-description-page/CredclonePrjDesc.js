@@ -35,6 +35,7 @@ const CredclonePrjDesc = () => {
             <a
               href="https://cred-landing-page-clone.vercel.app"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faLaptopCode} />
               Demo
@@ -42,6 +43,7 @@ const CredclonePrjDesc = () => {
             <a
               href="https://github.com/srahul099/Cred_Landing-Page_Clone"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faGithub} />
               GitHub

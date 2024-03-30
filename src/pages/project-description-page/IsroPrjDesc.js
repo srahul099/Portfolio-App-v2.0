@@ -40,6 +40,7 @@ const IsroPrjDesc = () => {
             <a
               href="https://www.figma.com/community/file/1337096441279951189/isro-website-redesign"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faFigma} />
               Design File
@@ -47,6 +48,7 @@ const IsroPrjDesc = () => {
             <a
               href="https://www.behance.net/gallery/194096535/ISRO-Website-Redesign"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faBehance} />
               Behance

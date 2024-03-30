@@ -38,6 +38,7 @@ const UserAuthenticationPrjDesc = () => {
             <a
               href="https://github.com/srahul099/User-Authertication-App"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faGithub} />
               GitHub

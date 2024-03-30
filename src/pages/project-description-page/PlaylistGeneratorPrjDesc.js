@@ -36,6 +36,7 @@ const PlaylistGeneratorPrjDesc = () => {
             <a
               href="https://srahul099.github.io/playlistgenerator.github.io"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faLaptopCode} />
               Demo
@@ -43,6 +44,7 @@ const PlaylistGeneratorPrjDesc = () => {
             <a
               href="https://github.com/srahul099/playlistgenerator.github.io"
               className="Buttons"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faGithub} />
               GitHub
