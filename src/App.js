@@ -3,7 +3,7 @@ import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+import Header from "./components/header/Header";
 import Projectspage from "./pages/Projects-page/Projectspage";
 import Homepage from "./pages/Home-page/Homepage";
 import ProgressBar from "react-scroll-progress-bar";
