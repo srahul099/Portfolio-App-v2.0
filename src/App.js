@@ -3,21 +3,21 @@ import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/header/Header";
+import Header from "./components/Header/Header";
 import Projectspage from "./pages/Projects-page/Projectspage";
-import Homepage from "./pages/homepage/Homepage";
+import Homepage from "./pages/Home-page/Homepage";
 import ProgressBar from "react-scroll-progress-bar";
-import WeatherappPrjDesc from "./pages/project-description-page/WeatherappPrjDesc";
-import CredclonePrjDesc from "./pages/project-description-page/CredclonePrjDesc";
-import UserAuthenticationPrjDesc from "./pages/project-description-page/UserAunthenticationPrjDesc";
-import PlaylistGeneratorPrjDesc from "./pages/project-description-page/PlaylistGeneratorPrjDesc";
-import QrGeneratorPrjDesc from "./pages/project-description-page/QrGeneratorPrjDesc";
-import AboutPage from "./pages/aboutpage/AboutPage";
+import WeatherappPrjDesc from "./pages/ProjectDescription-page/WeatherappPrjDesc";
+import CredclonePrjDesc from "./pages/ProjectDescription-page/CredclonePrjDesc";
+import UserAuthenticationPrjDesc from "./pages/ProjectDescription-page/UserAunthenticationPrjDesc";
+import PlaylistGeneratorPrjDesc from "./pages/ProjectDescription-page/PlaylistGeneratorPrjDesc";
+import QrGeneratorPrjDesc from "./pages/ProjectDescription-page/QrGeneratorPrjDesc";
+import AboutPage from "./pages/About-page/AboutPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleExclamation, faGear } from "@fortawesome/free-solid-svg-icons";
-import Contactpage from "./pages/contactpage/Contactpage";
-import PortfolioPrjDesc from "./pages/project-description-page/PortfolioPrjDesc";
-import IsroPrjDesc from "./pages/project-description-page/IsroPrjDesc";
+import Contactpage from "./pages/Contact-page/Contactpage";
+import PortfolioPrjDesc from "./pages/ProjectDescription-page/PortfolioPrjDesc";
+import IsroPrjDesc from "./pages/ProjectDescription-page/IsroPrjDesc";
 
 function App() {
   return (

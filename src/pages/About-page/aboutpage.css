@@ -246,6 +246,7 @@ a {
   }
   .carousel_sociallinks_container {
     flex-direction: column;
+    gap: 10px;
   }
   .Socials {
     font-size: 2rem;
