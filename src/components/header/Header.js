@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import { NavLink, useLocation } from "react-router-dom";
 import "./header.css";
 import { Squash as Hamburger } from "hamburger-react";
@@ -94,6 +94,7 @@ const Header = () => {
             >
               <h3 className="projects-nav">Projects</h3>
             </NavLink>
+
             <NavLink
               to="/contact"
               className={

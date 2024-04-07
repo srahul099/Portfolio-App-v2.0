@@ -1,6 +1,6 @@
 ::selection {
-  background: var(--neon-green);
-  color: #000;
+  background: var(--dark-blue);
+  color: #fff;
 }
 
 ::-moz-selection {

@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
 import "./projectdesc.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faFigma, faGithub } from "@fortawesome/free-brands-svg-icons";
 const PortfolioPrjDesc = () => {
   const navigate = useNavigate();
   return (
@@ -34,12 +34,12 @@ const PortfolioPrjDesc = () => {
           </div>
           <div className="project_Buttons">
             <a
-              href="https://r21portfolio.vercel.app"
+              href="https://www.figma.com/community/file/1358720002349391000/portfolio"
               className="Buttons"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faLaptopCode} />
-              Demo
+              <FontAwesomeIcon icon={faFigma} />
+              Design File
             </a>
             <a
               href="https://github.com/srahul099/Portfolio-App-v2.0"

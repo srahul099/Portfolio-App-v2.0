@@ -139,7 +139,7 @@ body {
 }
 @media (max-width: 1025px) {
   .projectspage {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .projectspage-section {
     margin: 0 50px;
@@ -177,16 +177,18 @@ body {
   }
   .projectspage-section {
     font-size: 2rem;
-    margin: 0;
+    margin: 20px 0;
   }
   .projectspage-heading {
     text-align: center;
     font-size: 2rem;
     border-radius: 10px;
-    margin: 0 20px 20px 20px;
+    margin: 0 20px 0px 20px;
   }
   .projectspage {
-    padding: 0 30px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
   }
   .projectpage-container {
     height: fit-content;

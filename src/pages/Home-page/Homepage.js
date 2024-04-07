@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../../components/Hero/Hero";
 import About from "../../components/About/About";
-import Projects from "../../components/projects/Projects";
+import Projects from "../../components/Recent-Projects/Projects";
 import "./homepage.css";
 import Contact from "../../components/Contact/Contact";
 const Homepage = () => {

@@ -149,7 +149,7 @@ body {
   .projects {
     grid-template-columns: repeat(1, 1fr);
     margin: 0;
-    padding: 20px 0;
+    padding: 10px 0;
   }
   .projects-header {
     background-color: transparent;
