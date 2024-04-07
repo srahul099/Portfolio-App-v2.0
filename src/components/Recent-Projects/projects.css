@@ -148,7 +148,7 @@ body {
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: repeat(1, 1fr);
-    margin: 0 10px;
+    margin: 0;
     padding: 10px 0;
   }
   .projects-header {
