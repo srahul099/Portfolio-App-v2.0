@@ -18,7 +18,7 @@ import { faCircleExclamation, faGear } from "@fortawesome/free-solid-svg-icons";
 import Contactpage from "./pages/Contact-page/Contactpage";
 import PortfolioPrjDesc from "./pages/ProjectDescription-page/PortfolioPrjDesc";
 import IsroPrjDesc from "./pages/ProjectDescription-page/IsroPrjDesc";
-
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
     <div className="App">
@@ -75,6 +75,7 @@ function App() {
           <Footer />
         </Router>
         <SpeedInsights />
+        <Analytics />
       </div>
     </div>
   );
