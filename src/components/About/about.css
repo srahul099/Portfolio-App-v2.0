@@ -7,7 +7,7 @@
   border-radius: 10px;
   background-color: var(--neon-green);
   color: var(--bg-black);
-  padding: 50px 80px;
+  padding: 30px 60px;
   text-align: left;
   gap: 20px;
 }
@@ -18,14 +18,14 @@
 }
 
 .about_Desc {
-  font-size: 1.5rem;
-  font-family: "DM Sans";
+  font-size: 1.3rem;
+  font-family: "Nunito-Regular";
 }
 .more_About {
+  font-family: "Nunito-Bold";
   text-decoration: none;
-  font-weight: 500;
   color: var(--neon-green);
-  padding: 5px 10px;
+  padding: 4px 10px;
   border-radius: 5px;
   background-color: var(--dark-blue);
   display: flex;

@@ -25,7 +25,8 @@
 }
 
 @media (max-width: 768px) {
-  .behance_wrapper {
-    display: none;
+  iframe {
+    height: 280px;
+    width: 350px;
   }
 }

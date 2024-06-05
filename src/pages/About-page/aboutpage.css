@@ -6,7 +6,7 @@ a {
 }
 .about-go-back {
   display: none;
-  font-family: "DM Sans";
+  font-family: "Nunito-Regular";
   text-decoration: none;
 }
 .about_Wrapper {
@@ -58,8 +58,7 @@ a {
   border-radius: 5px;
   background-color: transparent;
   color: var(--neon-green);
-  font-family: "DM Sans";
-  font-weight: 500;
+  font-family: "Nunito-Medium";
   border: 1px solid var(--neon-green);
   cursor: pointer;
 }
@@ -83,7 +82,7 @@ a {
   border-radius: 10px;
 }
 .about_R {
-  font-family: "DM Sans";
+  font-family: "Nunito-Regular";
   font-size: 1.1rem;
   text-align: left;
   justify-content: center;

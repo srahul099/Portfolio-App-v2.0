@@ -1,5 +1,6 @@
 .prjdesc_Wrapper {
   margin: 0 100px;
+  font-family: "Nunito-Regular";
 }
 #back_Btn {
   width: fit-content;
@@ -27,14 +28,13 @@
 }
 
 .project_Type {
+  font-family: "Nunito-Medium";
   font-size: 1rem;
-  font-weight: 500;
   color: var(--neon-green);
 }
 
 .project_Short_Description {
   font-size: 1rem;
-  font-weight: 500;
   color: var(--grey);
   width: 70%;
   text-align: left;
@@ -55,11 +55,13 @@
   justify-content: flex-start;
 }
 .project_Heading {
-  font-size: 3rem;
+  font-family: "Amulya-Bold";
+  font-size: 2.8rem;
   text-align: left;
 }
 
 .project_Techstack {
+  font-family: "Amulya-Medium";
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -110,6 +112,7 @@
 }
 
 .project_Longdesc h2 {
+  font-family: "Amulya-Bold";
   font-size: 2rem;
   font-weight: 700;
   color: var(--neon-green);
@@ -163,11 +166,11 @@
     width: 90%;
   }
   .project_Techstack_heading {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
   .project_Heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .project_Buttons {
     width: 100%;
@@ -181,6 +184,8 @@
   }
   .project_Short_Description {
     font-size: 0.9rem;
+    width: 100%;
+    margin: 10px 0;
   }
   .project_Longdesc {
     padding: 20px;

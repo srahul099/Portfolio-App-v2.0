@@ -8,10 +8,12 @@
   /* border-top: 1px solid #f2f2f2; */
   background-color: var(--black-blue);
   border-radius: 10px;
+  font-family: "Nunito-Regular";
 }
 
 .footer-desc {
   display: flex;
+  font-family: "Nunito-Regular";
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -21,6 +23,7 @@
 .footer-desc h2 {
   font-size: 5rem;
   color: var(--white);
+  font-family: "Nunito-Bold";
 }
 
 .footer-userdesc {
@@ -32,6 +35,7 @@
 }
 
 .footer-text {
+  font-family: "Nunito-Regular";
   display: flex;
   flex-direction: column;
   justify-content: center;

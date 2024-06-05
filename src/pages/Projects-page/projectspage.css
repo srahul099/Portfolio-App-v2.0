@@ -1,12 +1,12 @@
 body {
   color: var(--white);
+  font-family: "Nunito-Regular";
 }
 .go-back {
   display: none;
   position: fixed;
   top: 35px;
   left: 20px;
-  font-family: "DM Sans";
   text-decoration: none;
 }
 .projectspage-section {
@@ -66,10 +66,8 @@ body {
 }
 
 .proj__descrption {
-  font-family: "DM sans";
-  font-weight: 300;
   font-size: 18px;
-  margin: 5px 0px;
+  margin: 10px 0px;
   color: var(--grey);
 }
 .project_type {
@@ -77,8 +75,8 @@ body {
   margin-top: 5px;
 }
 .projectpage-tech {
-  padding: 10px 10px 10px 0;
-  height: 3.8rem;
+  padding: 5px 5px 5px 0;
+  height: 3.2rem;
 }
 
 .projectpage-container:hover {
@@ -122,7 +120,7 @@ body {
     overflow: hidden;
     padding: 0;
     margin: 20px;
-    gap: 5px;
+    gap: 10px;
   }
   .projectpage-desc p {
     font-size: 0.8rem;

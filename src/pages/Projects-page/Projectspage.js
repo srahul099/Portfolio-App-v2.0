@@ -53,10 +53,10 @@ const Projects = () => {
           className="projectpage-container"
         >
           <img src={ISRObanner} alt="" className="project-image" />
-          <div className="project-desc">
+          <div className="projectpage-desc">
             <h2>ISRO Website Redesign</h2>
             <div className="project_type">UI Design</div>
-            <p>
+            <p className="proj__descrption">
               Revamped the whole ISRO website with a modern and clean design
               which emphasises the importance of ISRO's work and easily
               accesible information.
