@@ -1,16 +1,164 @@
-.Contactpage_container {
+body {
+  font-family: "Nunito-Regular";
+}
+.contact-wrapper {
   margin: 0 100px;
+}
+
+.contactpage_heading {
+  font-family: "Humane";
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px 40px;
+  background-color: var(--black-blue);
+  color: var(--white);
+  opacity: 0.9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  padding: 4rem;
+  background-color: var(--neon-green);
+  color: var(--black-blue);
+  border-radius: 10px;
+}
+.getintouch {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+.contact-heading {
+  font-family: "Humane";
+  font-size: 3rem;
+}
+
+.contact-desc {
+  width: 60%;
+  text-align: left;
+  font-size: 1.3rem;
+}
+.Contactform-App {
+  width: 50%;
+}
+form.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Nunito-Bold";
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+.field label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.field input {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.field textarea {
+  padding: 0.5rem 1rem;
+  resize: vertical;
+  border-radius: 3px;
+  border: none;
+  width: 100%;
+  min-height: 200px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: var(--black-blue);
+  color: var(--neon-green);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.emailError {
+  color: red;
+  font-size: 0.8rem;
+  font-family: "Nunito-medium";
+}
+
+form {
+  padding: 20px 20px 0 20px;
 }
 @media (max-width: 1025px) {
-  .Contactpage_container {
+  .contact-wrapper {
     margin: 0 50px;
   }
+  .contact-container {
+    padding: 3rem;
+    gap: 1rem;
+  }
+  .getintouch {
+    width: 100%;
+  }
+  .contact-desc {
+    width: 100%;
+  }
+  .contact-form {
+    padding-right: 0;
+  }
+  .Contactform-App {
+    width: 100%;
+  }
+  .field {
+    font-family: "Nunito-Medium";
+  }
 }
+
 @media (max-width: 768px) {
-  .Contactpage_container {
+  .contact-wrapper {
     margin: 0 20px;
+  }
+  .contactpage_heading {
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 10px;
+  }
+  .field {
+    font-family: "Nunito-Medium";
+  }
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 0;
+  }
+  .getintouch {
+    width: 100%;
+  }
+  .Contactform-App {
+    width: 100%;
+  }
+  .contact-desc {
+    width: 100%;
+    font-size: 1rem;
+  }
+  form {
+    padding: 0;
   }
 }

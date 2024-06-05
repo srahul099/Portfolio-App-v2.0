@@ -1,13 +1,30 @@
 import React from "react";
-import Contact from "../../components/Contact/Contact";
 import "./Contactpage.css";
-const Contactpage = () => {
+import ContactForm from "./Contactform";
+const Contact = () => {
   return (
-    <div className="Contactpage_container">
-      <div className="about_Heading">CONTACT</div>
-      <Contact />
+    <div className="contact-wrapper">
+      <div className="contactpage_heading">
+        <h1>CONTACT</h1>
+      </div>
+      <div className="contact-container">
+        <div className="getintouch">
+          <div className="contact-heading">
+            <h1>Lets Chat!</h1>
+          </div>
+          <div className="contact-desc">
+            <p>
+              If you are interested to collaborate on projects or want to
+              provide feedback about any of my projects lets chat .
+            </p>
+          </div>
+        </div>
+        <div className="Contactform-App">
+          <ContactForm />
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Contactpage;
+export default Contact;

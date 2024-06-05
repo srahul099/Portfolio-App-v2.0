@@ -13,7 +13,7 @@
   align-items: center;
   margin: auto;
   width: fit-content;
-  gap: 70px;
+  gap: 60px;
 }
 .navbaritems a {
   text-decoration: none;
@@ -24,7 +24,7 @@
 .about-nav,
 .projects-nav,
 .contact-nav {
-  font-family: "DM Sans";
+  font-family: "Nunito-Medium";
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
