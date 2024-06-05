@@ -1,6 +1,15 @@
 @import "./amulya_font/css/amulya.css";
 @import "./Nunito_font/nunito_css/nunito.css";
-
+@font-face {
+  font-family: Organetto;
+  font-weight: 700;
+  src: local("Organetto"), url("./Organetto-UltraBoldCnd.ttf") format(TrueType);
+}
+@font-face {
+  font-family: Organetto;
+  font-weight: 500;
+  src: local("Organetto"), url("./Organetto-RegularCnd.ttf") format(TrueType);
+}
 @font-face {
   font-family: Humane;
   font-weight: 500;
