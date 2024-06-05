@@ -79,7 +79,7 @@ body {
 }
 
 @media (max-width: 1025px) {
-  .contact-container {
+  .home_contact-container {
     padding: 3rem;
     gap: 1rem;
   }
@@ -95,7 +95,7 @@ body {
   .field {
     font-weight: 500;
   }
-  .contact-container {
+  .home_contact-container {
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
