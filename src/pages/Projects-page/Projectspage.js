@@ -64,7 +64,7 @@ const Projects = () => {
             <img
               src="https://skillicons.dev/icons?i=figma"
               alt="tech stack"
-              className="project-tech"
+              className="projectpage-tech"
             />
             {/* <button className="demo-btn">Demo</button> */}
           </div>

@@ -18,7 +18,6 @@ body {
   font-size: 2rem;
   text-align: center;
   padding: 20px 40px;
-
   background-color: var(--black-blue);
   color: var(--white);
   opacity: 0.9;
@@ -61,13 +60,15 @@ body {
 }
 
 .projectpage-desc h2 {
+  font-family: "Amulya-Bold";
   font-size: 24px;
   white-space: nowrap;
 }
 
 .proj__descrption {
+  font-family: "Nunito-Regular";
   font-size: 18px;
-  margin: 10px 0px;
+  margin: 10px 0px 10px 0;
   color: var(--grey);
 }
 .project_type {
@@ -213,6 +214,6 @@ body {
   }
 
   .projectpage-tech {
-    height: 3.3rem;
+    height: 2.9rem;
   }
 }
