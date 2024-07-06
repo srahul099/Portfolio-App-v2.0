@@ -127,6 +127,9 @@
   .infinitehorizonscroll {
     width: 100vw;
   }
+  .infinitehorizon1 {
+    margin-bottom: 250px;
+  }
   .infinitehorizon1,
   .infinitehorizon2 {
     font-size: 7rem;
