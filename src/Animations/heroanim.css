@@ -122,13 +122,13 @@
 
 @media (max-width: 768px) {
   .container {
-    height: 100vh;
+    height: 70vh;
   }
   .infinitehorizonscroll {
     width: 100vw;
   }
   .infinitehorizon1 {
-    margin-bottom: 250px;
+    margin-bottom: 70px;
   }
   .infinitehorizon1,
   .infinitehorizon2 {

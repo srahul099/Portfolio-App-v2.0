@@ -116,14 +116,15 @@
     width: 75%;
   }
   .socials {
-    margin-top: 1rem;
+    display: none;
   }
   .linkedinacc,
   .githubacc {
     width: 1.5rem;
   }
   .infinitescroll {
-    height: 80vh;
+    top: 70px;
+    height: 50rem;
     justify-content: center;
   }
 }
