@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 85vh;
 }
 .desc {
+  height: 50vh;
   display: flex;
   /* display: none; */
   flex-direction: column;
