@@ -16,7 +16,7 @@ const AboutPage = () => {
           </div>
           <div className="about_R">
             <p>
-              I'm Rahul, a third-year Computer Science student at{" "}
+              I'm Rahul, a fourth-year Computer Science student at{" "}
               <span className="special">
                 SRM Institute of Science and Engineering
               </span>

@@ -19,6 +19,7 @@ import Contactpage from "./pages/Contact-page/Contactpage";
 import PortfolioPrjDesc from "./pages/ProjectDescription-page/PortfolioPrjDesc";
 import IsroPrjDesc from "./pages/ProjectDescription-page/IsroPrjDesc";
 import { Analytics } from "@vercel/analytics/react";
+import Loader from "./components/Loader/Loader";
 function App() {
   return (
     <div className="App">
@@ -33,7 +34,9 @@ function App() {
       </div>
       <div className="main_Screen">
         <ProgressBar bgcolor="var(--neon-green)" duration="0.8" />
-
+        <div className="loader_Overlay">
+          <Loader />
+        </div>
         <Router>
           <div className="Header">
             {/* <div className="work_in_progress">
