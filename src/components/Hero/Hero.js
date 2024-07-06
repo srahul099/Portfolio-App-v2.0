@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./hero.css";
 import github from "../../common/images/github.png";
 import linkedin from "../../common/images/linkedin.png";

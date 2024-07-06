@@ -7,7 +7,6 @@
   flex-direction: row;
   background-color: var(--neon-green);
   color: var(--black-blue);
-  opacity: 1;
 }
 
 .counter {
@@ -28,8 +27,17 @@
 }
 
 .slideOut {
-  opacity: 0;
-  transition: opacity 1s;
+  animation: slideOut 0.5s ease-in-out forwards;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+    display: none;
+  }
 }
 
 @media (max-width: 1367px) {
@@ -44,8 +52,10 @@
 @media (max-width: 768px) {
   .counter {
     font-size: 10rem;
+    height: 25vh;
   }
   .loading_Text {
     font-size: 3rem;
+    height: 10vh;
   }
 }

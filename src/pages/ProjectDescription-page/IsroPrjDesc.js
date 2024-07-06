@@ -5,11 +5,7 @@ import ISROui from "../../common/images/ISRO Landing Page.png";
 import "./projectdesc.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import {
-  faBehance,
-  faFigma,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { faBehance, faFigma } from "@fortawesome/free-brands-svg-icons";
 const IsroPrjDesc = () => {
   const navigate = useNavigate();
   return (

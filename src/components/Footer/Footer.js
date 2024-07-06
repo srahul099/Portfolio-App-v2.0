@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.css";
-import Logo from "../../common/images/LOGO FINAL white png.png";
 import {
   UilInstagramAlt,
   UilYoutube,

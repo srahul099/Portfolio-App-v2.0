@@ -46,6 +46,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .resume_Download {
@@ -61,12 +62,12 @@ a {
   font-family: "Nunito-Medium";
   border: 1px solid var(--neon-green);
   cursor: pointer;
+  transition: 0.1s;
 }
 .resume_Download:hover {
   background-color: var(--neon-green);
   color: var(--dark-blue);
   border: 1px solid var(--neon-green);
-  transition: 0.1s;
 }
 
 .about_Heading {

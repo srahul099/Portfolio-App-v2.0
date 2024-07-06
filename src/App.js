@@ -14,7 +14,7 @@ import PlaylistGeneratorPrjDesc from "./pages/ProjectDescription-page/PlaylistGe
 import QrGeneratorPrjDesc from "./pages/ProjectDescription-page/QrGeneratorPrjDesc";
 import AboutPage from "./pages/About-page/AboutPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleExclamation, faGear } from "@fortawesome/free-solid-svg-icons";
+import { faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
 import Contactpage from "./pages/Contact-page/Contactpage";
 import PortfolioPrjDesc from "./pages/ProjectDescription-page/PortfolioPrjDesc";
 import IsroPrjDesc from "./pages/ProjectDescription-page/IsroPrjDesc";
