@@ -8,6 +8,7 @@ import {
 } from "@iconscout/react-unicons";
 import { NavLink } from "react-router-dom";
 import { animateScroll } from "react-scroll";
+import logo from "../../common/images/LOGO FINAL white png.png";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -17,30 +18,31 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-desc">
         <NavLink to="/" onClick={scrollToTop}>
-          <h2>Rahul.</h2>
+          <img src={logo} alt="r21-Logo" />
         </NavLink>
+      </div>
+      <div className="footer-r">
         <p className="footer-userdesc">
-          I'm a web developer and designer based in India. I have a very deep
-          passion to design stuff &#10084; This Website is made with the lot of
-          love and passion.
+          Designing the <span>extraordinary</span> <br></br> one{" "}
+          <span>pixel</span> at a time.
         </p>
-        <div className="icons">
+        {/* <div className="icons">
           <a href="">
-            <UilInstagramAlt size="40" color="#d5ff3f" />
+            <UilInstagramAlt size="30" color="#d5ff3f" />
           </a>
 
           <a href="">
-            <UilLinkedin size="40" color="#d5ff3f" />
+            <UilLinkedin size="30" color="#d5ff3f" />
           </a>
           <a href="">
-            <UilGithub size="40" color="#d5ff3f" />
+            <UilGithub size="30" color="#d5ff3f" />
           </a>
           <a href="">
-            <UilYoutube size="40" color="#d5ff3f" />
+            <UilYoutube size="30" color="#d5ff3f" />
           </a>
-        </div>
+        </div> */}
         <div className="footer-text">
-          <p>Portfolio v2.1</p>
+          <p>Portfolio v2.2</p>
           <p>© 2024 Rahul</p>
         </div>
       </div>

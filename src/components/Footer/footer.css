@@ -3,47 +3,69 @@
   padding: 40px;
   padding-bottom: 30px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   gap: 40px;
-  /* border-top: 1px solid #f2f2f2; */
   background-color: var(--black-blue);
   border-radius: 10px;
   font-family: "Nunito-Regular";
+  overflow: hidden;
 }
 
 .footer-desc {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
   font-family: "Nunito-Regular";
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   text-align: left;
 }
 
-.footer-desc h2 {
-  font-size: 5rem;
-  color: var(--white);
-  font-family: "Nunito-Bold";
+.footer-desc img {
+  width: 260px;
+  padding: 20px 20px 20px 20px;
 }
 
 .footer-userdesc {
-  font-size: 1rem;
-  width: 40%;
+  font-family: "Humane";
+  font-weight: 400;
+  font-size: 6rem;
+  text-align: right;
   color: #6c757d;
-  margin-bottom: 20px;
-  text-align: center;
+}
+
+.footer-userdesc span {
+  color: var(--neon-green);
+  font-weight: 700;
 }
 
 .footer-text {
   font-family: "Nunito-Regular";
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3px;
-  width: 100%;
-  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  text-align: right;
   color: #6c757d;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.icons a {
+  height: 30px;
+}
+
+.footer-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: right;
 }
 @media (max-width: 1025px) {
   .footer-container {
@@ -59,16 +81,43 @@
 
 @media (max-width: 768px) {
   .footer-container {
-    margin: 30px 20px 0 20px;
+    margin: 30px 10px 0 10px;
     padding: 20px;
     padding-bottom: 30px;
+    flex-direction: column;
+    gap: 10px;
   }
-
-  .footer-desc h2 {
-    font-size: 3rem;
+  .footer-desc {
+    align-items: center;
   }
-
+  .footer-desc img {
+    width: 80px;
+    padding: 0;
+  }
+  .footer-desc p {
+    text-align: center;
+  }
   .footer-userdesc {
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+  }
+  .footer-userdesc span {
+    font-weight: 400;
+  }
+  .footer-r {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .footer-text {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

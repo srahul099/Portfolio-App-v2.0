@@ -55,6 +55,7 @@ const AboutPage = () => {
               <a
                 href="https://drive.google.com/uc?export=download&id=1SAWQg0rKhkxOWiLXpyPyYTHl0M31ujGs"
                 download="Rahul-Resume.pdf"
+                aria-label="Download Resume"
               >
                 <div className="resume_Download">
                   <FontAwesomeIcon icon={faFile} />
