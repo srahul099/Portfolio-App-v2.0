@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./hero.css";
 import github from "../../common/images/github.png";
 import linkedin from "../../common/images/linkedin.png";
 import Heroanim from "../../Animations/Heroanim";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 const Hero = () => {
   return (
     <div className="heroitems">
@@ -27,6 +29,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      <FontAwesomeIcon icon={faAnglesDown} bounce className="arrow-Down" />
     </div>
   );
 };

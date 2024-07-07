@@ -79,6 +79,7 @@
     var(--bg-black) 80%,
     transparent
   );
+  top: 30px;
 }
 
 .infinitehorizon2 span {

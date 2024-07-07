@@ -12,6 +12,7 @@ import ISRObanner from "../../common/images/banners/ISRO-banner.png";
 import { NavLink } from "react-router-dom";
 import { animateScroll } from "react-scroll";
 const Projects = () => {
+  document.title = "Portfolio | Projects";
   const scrollToTop = () => {
     animateScroll.scrollToTop();
   };

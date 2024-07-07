@@ -2,6 +2,7 @@ import React from "react";
 import "./Contactpage.css";
 import ContactForm from "./Contactform";
 const Contact = () => {
+  document.title = "Portfolio | Contact";
   return (
     <div className="contact-wrapper">
       <div className="contactpage_heading">

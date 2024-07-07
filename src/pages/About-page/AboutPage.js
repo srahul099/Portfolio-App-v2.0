@@ -6,6 +6,7 @@ import profilepicture from "../../common/images/ProfilePicture.jpg";
 import AboutCarousel from "./AboutCarousel";
 import SocialLinks from "./SocialLinks";
 const AboutPage = () => {
+  document.title = "Portfolio | About";
   return (
     <div className="aboutpage_Wrapper">
       <div className="about_Wrapper">
