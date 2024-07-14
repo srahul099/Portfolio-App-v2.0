@@ -6,6 +6,7 @@ import "./homepage.css";
 import Contact from "../../components/Contact/Contact";
 import Behanceprjs from "../../components/BehancePrjs/Behanceprjs";
 const Homepage = () => {
+  document.title = "Portfolio | Home";
   return (
     <div>
       <div className="section-flex">

@@ -13,11 +13,17 @@
   height: 100%;
 }
 
+.loader_Overlay {
+  z-index: 100;
+  position: fixed;
+}
+
 body::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
 }
+
 .work_in_progress {
   padding: 5px;
   background-color: var(--white);

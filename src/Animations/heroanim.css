@@ -6,7 +6,7 @@
   align-items: center;
 }
 .infinitehorizonscroll {
-  opacity: 0.18;
+  opacity: 0.3;
   overflow: hidden;
   /* margin: 0 100px; */
 }
@@ -17,7 +17,7 @@
   overflow: hidden;
   white-space: nowrap;
   line-height: fit-content;
-  color: var(--bg-black);
+  color: var(--bg-grey);
   -webkit-text-stroke-color: var(--neon-green);
   -webkit-text-stroke-width: 1.6px;
   font-family: "Organetto";
@@ -65,7 +65,7 @@
   overflow: hidden;
   white-space: nowrap;
   line-height: fit-content;
-  color: var(--bg-black);
+  color: var(--bg-grey);
   -webkit-text-stroke-color: var(--neon-green);
   -webkit-text-stroke-width: 1.6px;
   font-family: "Organetto";
@@ -79,6 +79,7 @@
     var(--bg-black) 80%,
     transparent
   );
+  top: 30px;
 }
 
 .infinitehorizon2 span {
@@ -122,10 +123,13 @@
 
 @media (max-width: 768px) {
   .container {
-    height: 100vh;
+    height: 70vh;
   }
   .infinitehorizonscroll {
     width: 100vw;
+  }
+  .infinitehorizon1 {
+    margin-bottom: 70px;
   }
   .infinitehorizon1,
   .infinitehorizon2 {

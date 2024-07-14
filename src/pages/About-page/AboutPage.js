@@ -6,6 +6,7 @@ import profilepicture from "../../common/images/ProfilePicture.jpg";
 import AboutCarousel from "./AboutCarousel";
 import SocialLinks from "./SocialLinks";
 const AboutPage = () => {
+  document.title = "Portfolio | About";
   return (
     <div className="aboutpage_Wrapper">
       <div className="about_Wrapper">
@@ -16,7 +17,7 @@ const AboutPage = () => {
           </div>
           <div className="about_R">
             <p>
-              I'm Rahul, a third-year Computer Science student at{" "}
+              I'm Rahul, a fourth-year Computer Science student at{" "}
               <span className="special">
                 SRM Institute of Science and Engineering
               </span>
@@ -54,6 +55,7 @@ const AboutPage = () => {
               <a
                 href="https://drive.google.com/uc?export=download&id=1SAWQg0rKhkxOWiLXpyPyYTHl0M31ujGs"
                 download="Rahul-Resume.pdf"
+                aria-label="Download Resume"
               >
                 <div className="resume_Download">
                   <FontAwesomeIcon icon={faFile} />
