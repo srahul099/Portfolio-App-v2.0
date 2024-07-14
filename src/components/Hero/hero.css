@@ -106,19 +106,19 @@
 
 @media (max-width: 768px) {
   .heroitems {
-    height: 100vh;
+    height: 80vh;
     flex-direction: column;
   }
   .desc {
     height: fit-content;
-    top: -30px;
+    top: -45px;
     position: relative;
   }
   .name {
-    font-size: 12rem;
-    line-height: 150px;
-    margin-bottom: 0px;
-    height: 140px;
+    font-size: 13rem;
+    line-height: 175px;
+    margin: 5px 0 5px 0;
+    height: 150px;
   }
   .line1 {
     font-size: 1rem;
@@ -135,7 +135,7 @@
     width: 1.5rem;
   }
   .infinitescroll {
-    top: 70px;
+    top: 50px;
     height: 50rem;
     justify-content: center;
   }
@@ -147,8 +147,8 @@
     bottom: 70px;
   }
 }
-@media (max-width: 741px) {
+/* @media (max-width: 741px) {
   .heroitems {
     height: 80vh;
   }
-}
+} */
