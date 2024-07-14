@@ -142,7 +142,7 @@
   .arrow-Down {
     display: block;
     color: var(--neon-green);
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
     bottom: 70px;
   }

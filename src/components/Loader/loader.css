@@ -27,7 +27,7 @@
 }
 
 .slideOut {
-  animation: slideOut 0.5s ease-in-out forwards;
+  animation: slideOut 0.5s ease-out forwards;
 }
 
 @keyframes slideOut {
