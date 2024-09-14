@@ -37,7 +37,7 @@ const Projects = () => {
           <div className="projectpage-desc">
             <div className="prj-card-title">
               <div className="project-card-heading">
-                <h2 className="warp-text">Rescue Paws</h2>
+                <h2>Rescue Paws</h2>
                 <div className="project_type">Mobile Application</div>
               </div>
               <div className="workInProgress">
@@ -65,8 +65,9 @@ const Projects = () => {
           <div className="projectpage-desc">
             <div className="prj-card-title">
               <div className="project-card-heading">
-                <h2 className="warp-text">Symptom</h2>
-                <h2 className="warp-text">Checker</h2>
+                <h2 className="warp-text">Symptom Checker</h2>
+                <h2 className="warp-text mobile">Symptom</h2>
+                <h2 className="warp-text mobile">Checker</h2>
                 <div className="project_type">Full Stack</div>
               </div>
               <div className="workInProgress">
