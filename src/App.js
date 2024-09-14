@@ -20,6 +20,7 @@ import PortfolioPrjDesc from "./pages/ProjectDescription-page/PortfolioPrjDesc";
 import IsroPrjDesc from "./pages/ProjectDescription-page/IsroPrjDesc";
 import { Analytics } from "@vercel/analytics/react";
 import Loader from "./components/Loader/Loader";
+import GalleryPage from "./pages/Gallery-page/GalleryPage";
 function App() {
   return (
     <div className="App">
@@ -67,6 +68,7 @@ function App() {
               element={<IsroPrjDesc />}
             />
             <Route path="/projects/Portfolio" element={<PortfolioPrjDesc />} />
+            <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<Contactpage />} />
           </Routes>
           <Footer />

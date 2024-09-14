@@ -8,7 +8,7 @@
   align-items: center;
   gap: 40px;
   background-color: var(--black-blue);
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   font-family: "Nunito-Regular";
   overflow: hidden;
 }

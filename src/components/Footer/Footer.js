@@ -42,7 +42,7 @@ const Footer = () => {
           </a>
         </div> */}
         <div className="footer-text">
-          <p>Portfolio v2.2</p>
+          <p>Portfolio v2.3</p>
           <p>© 2024 Rahul</p>
         </div>
       </div>

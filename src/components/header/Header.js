@@ -47,6 +47,14 @@ const Header = () => {
           <h3 className="projects-nav">Projects</h3>
         </NavLink>
         <NavLink
+          exact
+          to="/gallery"
+          className={location.pathname.startsWith("/gallery") ? "active" : ""}
+          onClick={projectscrollToTop}
+        >
+          <h3 className="home-nav">Gallery</h3>
+        </NavLink>
+        <NavLink
           to="/contact"
           className={location.pathname.startsWith("/contact") ? "active" : ""}
           onClick={projectscrollToTop}
@@ -94,7 +102,19 @@ const Header = () => {
             >
               <h3 className="projects-nav">Projects</h3>
             </NavLink>
-
+            <NavLink
+              exact
+              to="/gallery"
+              className={
+                location.pathname.startsWith("/gallery") ? "active" : ""
+              }
+              onClick={() => {
+                projectscrollToTop();
+                toggleNav();
+              }}
+            >
+              <h3 className="home-nav">Gallery</h3>
+            </NavLink>
             <NavLink
               to="/contact"
               className={
