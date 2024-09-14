@@ -2,15 +2,16 @@ import React from "react";
 import "./projects.css";
 
 // banner imports
-import weatherbanner from "../../common/images/banners/Weather-banner.png";
 import userauthenticationbanner from "../../common/images/banners/UserAunthentication-banner.png";
-import credclonebanner from "../../common/images/banners/Credclone-banner.png";
-// import inprogressbanner from "../../common/images/banners/inprogress-banner.png";
+import rescue from "../../common/images/banners/rescue-paws-banner.png";
+import symptom from "../../common/images/banners/Symptom-banner.png";
+import contgen from "../../common/images/banners/contgen-banner.png";
+import expo from "../../common/images/expologo.png";
 import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
 import ISRObanner from "../../common/images/banners/ISRO-banner.png";
 //banner imports end
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faGear } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import { animateScroll } from "react-scroll";
 const Projects = () => {
@@ -31,7 +32,88 @@ const Projects = () => {
       <div className="projects">
         {/*  */}
         {/* projects */}
-        <NavLink
+        <div className="projectpage-container">
+          <img src={rescue} alt="" className="project-image" />
+          <div className="projectpage-desc">
+            <div className="prj-card-title">
+              <div className="project-card-heading">
+                <h2 className="warp-text">Rescue Paws</h2>
+                <div className="project_type">Mobile Application</div>
+              </div>
+              <div className="workInProgress">
+                <p>Work in Progress</p>
+                <FontAwesomeIcon icon={faGear} spin />
+              </div>
+            </div>
+            <p className="proj__descrption">
+              Currently Developing an app for animal rescue and adoption which
+              will help in connecting dog lovers and the dogs in need.
+            </p>
+            <div className="techstack-edit">
+              <img src={expo} alt="expo" className="expo" />
+              <img
+                src="https://skillicons.dev/icons?i=react,tailwindcss,javascript,firebase"
+                alt="tech stack"
+                className="projectpage-tech"
+              />
+            </div>
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </div>
+        <div className="projectpage-container">
+          <img src={symptom} alt="" className="project-image" />
+          <div className="projectpage-desc">
+            <div className="prj-card-title">
+              <div className="project-card-heading">
+                <h2 className="warp-text">Symptom Checker</h2>
+                <h2 className="warp-text mobile">Symptom</h2>
+                <h2 className="warp-text mobile">Checker</h2>
+                <div className="project_type">Full Stack</div>
+              </div>
+              <div className="workInProgress">
+                <p>Work in Progress</p>
+                <FontAwesomeIcon icon={faGear} spin />
+              </div>
+            </div>
+            <p className="proj__descrption">
+              Currently Developing an AI based Animal Symptom Checker which can
+              be used for initial diagnosis of animals.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=nextjs,react,tailwindcss,javascript,firebase"
+              alt="tech stack"
+              className="projectpage-tech"
+            />
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </div>
+        <div className="projectpage-container">
+          <img src={contgen} alt="" className="project-image" />
+          <div className="projectpage-desc">
+            <div className="prj-card-title">
+              <div>
+                <h2>ContGen</h2>
+                <div className="project_type">Full Stack</div>
+              </div>
+              <div className="workInProgress">
+                <p>Work in Progress</p>
+                <FontAwesomeIcon icon={faGear} spin />
+              </div>
+            </div>
+            <p className="proj__descrption">
+              Currently Developing an AI based Content Generator which will be
+              able to generate content for various domains like Blogging, Social
+              Media, etc.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=nextjs,react,tailwindcss,typescript,firebase"
+              alt="tech stack"
+              className="projectpage-tech"
+            />
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </div>
+        {/* <NavLink
           to="/projects/Portfolio"
           onClick={scrollToTop}
           className="projectpage-container"
@@ -50,7 +132,6 @@ const Projects = () => {
               alt="tech stack"
               className="project-tech"
             />
-            {/* <button className="demo-btn">Demo</button> */}
           </div>
         </NavLink>
         <NavLink
@@ -72,7 +153,6 @@ const Projects = () => {
               alt="tech stack"
               className="project-tech"
             />
-            {/* <button className="demo-btn">Demo</button> */}
           </div>
         </NavLink>
         <NavLink
@@ -98,63 +178,20 @@ const Projects = () => {
               alt="tech stack"
               className="project-tech"
             />
-            {/* <button className="demo-btn">Demo</button> */}
           </div>
-        </NavLink>
+        </NavLink> */}
+
         <NavLink
-          to="/projects/weatherapp"
+          to="/projects"
           onClick={scrollToTop}
-          className="project-container"
+          className="more-projects_mobile"
         >
-          <img src={weatherbanner} alt="" className="project-image" />
-          <div className="project-desc">
-            <h2>Weather App</h2>
-            <div className="project_type">Full Stack</div>
-            <p>
-              Developed a full-stack weather app using NodeJS/Express for
-              server-side logic and ReactJS/Handlebars for interactive frontend,
-              delivering real-time weather data.
-            </p>
-            <img
-              src="https://skillicons.dev/icons?i=html,css,javascript,nodejs,express"
-              alt="tech stack"
-              className="project-tech"
-            />
-          </div>
-        </NavLink>
-        <NavLink
-          to="/projects/credclone"
-          onClick={scrollToTop}
-          className="project-container"
-        >
-          <img src={credclonebanner} alt="" className="project-image" />
-          <div className="project-desc">
-            <h2>Cred Clone</h2>
-            <div className="project_type">Frontend</div>
-            <p>
-              Crafted a responsive CRED Landing Page clone using ReactJS for
-              modularity and interactivity, styled with CSS to match the
-              original design.
-            </p>
-            <img
-              src="https://skillicons.dev/icons?i=react,css,javascript"
-              alt="tech stack"
-              className="project-tech"
-            />
-            {/* <button className="demo-btn">Demo</button> */}
+          <h2>See All</h2>
+          <div className="more">
+            <FontAwesomeIcon icon={faArrowRight} className="more-icon" />
           </div>
         </NavLink>
       </div>
-      <NavLink
-        to="/projects"
-        onClick={scrollToTop}
-        className="more-projects_mobile"
-      >
-        <h2>See All</h2>
-        <div className="more">
-          <FontAwesomeIcon icon={faArrowRight} className="more-icon" />
-        </div>
-      </NavLink>
     </div>
   );
 };

@@ -61,6 +61,9 @@ body {
   text-decoration: none;
   color: var(--white);
 }
+.mobile {
+  display: none;
+}
 
 .project-image {
   border-radius: 15px 15px 0 0;
@@ -217,5 +220,8 @@ body {
   }
   .project_type {
     font-size: 0.8rem;
+  }
+  .mobile {
+    display: block;
   }
 }
