@@ -93,6 +93,26 @@ body {
   }
 }
 
+.prj-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.workInProgress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--bg-grey);
+  padding: 6px 10px;
+  border-radius: 20px;
+  color: var(--grey);
+  font-family: "Nunito-Bold";
+  font-size: 1rem;
+  font-weight: 500;
+}
 .demo-btn {
   padding: 10px 20px;
   border-radius: 10px;
@@ -135,6 +155,17 @@ body {
   .projectpage-tech {
     height: 3.3rem;
   }
+}
+.techstack-edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+  gap: 7px;
+}
+.expo {
+  height: 40px;
+  border-radius: 6px;
 }
 @media (max-width: 1025px) {
   .projectspage {
@@ -215,5 +246,18 @@ body {
 
   .projectpage-tech {
     height: 2.9rem;
+  }
+  .workInProgress {
+    font-size: 0.7rem;
+  }
+  .workInProgress p {
+    font-size: 0.7rem;
+  }
+  .project-card-heading {
+    width: 50%;
+  }
+  .expo {
+    height: 2.2rem;
+    border-radius: 6px;
   }
 }

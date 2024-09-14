@@ -8,9 +8,15 @@ import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
 import qrcodegeneratorbanner from "../../common/images/banners/qrcodegenerator-banner.png";
 import playlistgeneratorbanner from "../../common/images/banners/playlistgenerator-banner.png";
 import ISRObanner from "../../common/images/banners/ISRO-banner.png";
-
+import rescue from "../../common/images/banners/rescue-paws-banner.png";
+import symptom from "../../common/images/banners/Symptom-banner.png";
+import contgen from "../../common/images/banners/contgen-banner.png";
+import expo from "../../common/images/expologo.png";
 import { NavLink } from "react-router-dom";
 import { animateScroll } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGear } from "@fortawesome/free-solid-svg-icons";
+
 const Projects = () => {
   document.title = "Portfolio | Projects";
   const scrollToTop = () => {
@@ -26,6 +32,86 @@ const Projects = () => {
         <h1>PROJECTS</h1>
       </div>
       <div className="projectspage">
+        <div className="projectpage-container">
+          <img src={rescue} alt="" className="project-image" />
+          <div className="projectpage-desc">
+            <div className="prj-card-title">
+              <div className="project-card-heading">
+                <h2 className="warp-text">Rescue Paws</h2>
+                <div className="project_type">Mobile Application</div>
+              </div>
+              <div className="workInProgress">
+                <p>Work in Progress</p>
+                <FontAwesomeIcon icon={faGear} spin />
+              </div>
+            </div>
+            <p className="proj__descrption">
+              Currently Developing an app for animal rescue and adoption which
+              will help in connecting dog lovers and the dogs in need.
+            </p>
+            <div className="techstack-edit">
+              <img src={expo} alt="expo" className="expo" />
+              <img
+                src="https://skillicons.dev/icons?i=react,tailwindcss,javascript,firebase"
+                alt="tech stack"
+                className="projectpage-tech"
+              />
+            </div>
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </div>
+        <div className="projectpage-container">
+          <img src={symptom} alt="" className="project-image" />
+          <div className="projectpage-desc">
+            <div className="prj-card-title">
+              <div className="project-card-heading">
+                <h2 className="warp-text">Symptom</h2>
+                <h2 className="warp-text">Checker</h2>
+                <div className="project_type">Full Stack</div>
+              </div>
+              <div className="workInProgress">
+                <p>Work in Progress</p>
+                <FontAwesomeIcon icon={faGear} spin />
+              </div>
+            </div>
+            <p className="proj__descrption">
+              Currently Developing an AI based Animal Symptom Checker which can
+              be used for initial diagnosis of animals.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=nextjs,react,tailwindcss,javascript,firebase"
+              alt="tech stack"
+              className="projectpage-tech"
+            />
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </div>
+        <div className="projectpage-container">
+          <img src={contgen} alt="" className="project-image" />
+          <div className="projectpage-desc">
+            <div className="prj-card-title">
+              <div>
+                <h2>ContGen</h2>
+                <div className="project_type">Full Stack</div>
+              </div>
+              <div className="workInProgress">
+                <p>Work in Progress</p>
+                <FontAwesomeIcon icon={faGear} spin />
+              </div>
+            </div>
+            <p className="proj__descrption">
+              Currently Developing an AI based Content Generator which will be
+              able to generate content for various domains like Blogging, Social
+              Media, etc.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=nextjs,react,tailwindcss,typescript,firebase"
+              alt="tech stack"
+              className="projectpage-tech"
+            />
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </div>
         <NavLink
           to="/projects/Portfolio"
           onClick={scrollToTop}
@@ -91,24 +177,7 @@ const Projects = () => {
             />
           </div>
         </NavLink>
-        <div className="projectpage-container">
-          <img src={inprogressbanner} alt="" className="projectpage-image" />
-          <div className="projectpage-desc">
-            <h2>To-Do app</h2>
-            <p className="project_type">Full Stack</p>
-            <p className="proj__descrption">
-              Developed a responsive Todo List web app using ReactJS for
-              enhanced user interaction , with Firebase for real-time data
-              management and synchronization.
-            </p>
-            <img
-              src="https://skillicons.dev/icons?i=react,materialui,firebase"
-              alt="tech stack"
-              className="projectpage-tech"
-            />
-            {/* <button className="demo-btn">Demo</button> */}
-          </div>
-        </div>
+
         <NavLink
           to="/projects/credclone"
           onClick={scrollToTop}
