@@ -34,38 +34,36 @@ const GalleryPage = () => {
   return (
     <div>
       {loaded != 24 && <Loader />}
-      <div className="gallery-container">
+      <div className="gallery-img-container">
         <div className="gallerypage-heading">
           <h1>Gallery</h1>
         </div>
-        <div className="gallery-img-container">
-          <img src={alanwalker} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={bayern} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={drs} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={harvey} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={monster} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={marsh} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={psg} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={psg2} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={statue} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={tanjiro} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={thanos} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={beks} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={united} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={stillwerise} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={vineeth} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={f1blender} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={barca} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={chelsea} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={blender1} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={blender2} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={blender3} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={blender4} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={kakashi} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={naruto} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={pendu} alt="" onLoad={() => setLoaded(loaded + 1)} />
-          <img src={pendu2} alt="" onLoad={() => setLoaded(loaded + 1)} />
-        </div>
+        <img src={alanwalker} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={bayern} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={drs} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={harvey} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={monster} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={marsh} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={psg} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={psg2} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={statue} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={tanjiro} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={thanos} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={beks} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={united} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={stillwerise} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={vineeth} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={f1blender} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={barca} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={chelsea} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={blender1} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={blender2} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={blender3} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={blender4} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={kakashi} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={naruto} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={pendu} alt="" onLoad={() => setLoaded(loaded + 1)} />
+        <img src={pendu2} alt="" onLoad={() => setLoaded(loaded + 1)} />
       </div>
     </div>
   );

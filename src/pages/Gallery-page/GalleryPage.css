@@ -3,11 +3,9 @@ img {
   margin-bottom: 0.7rem;
 }
 
-.gallery-container {
-  margin: 0 100px 0 100px;
-}
 .gallery-img-container {
   columns: 350px;
+  margin: 0 100px 0 100px;
 }
 .loader-gallery {
   z-index: 200;
@@ -24,15 +22,13 @@ img {
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
-  .gallery-container {
-    margin: 0 20px 0 20px;
-  }
   .gallerypage-heading {
     text-align: center;
     font-size: 2rem;
     border-radius: 10px;
   }
   .gallery-img-container {
-    columns: 170px;
+    columns: 160px;
+    margin: 0 20px 0 20px;
   }
 }
