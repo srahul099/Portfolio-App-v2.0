@@ -1,0 +1,35 @@
+img {
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+
+.gallery-container {
+  margin: 0 100px 0 100px;
+}
+.gallery-img-container {
+  columns: 350px;
+}
+.gallerypage-heading {
+  font-family: "Humane";
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px 40px;
+  background-color: var(--black-blue);
+  color: var(--white);
+  opacity: 0.9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .gallery-container {
+    margin: 0 20px 0 20px;
+  }
+  .gallerypage-heading {
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 10px;
+  }
+  .gallery-img-container {
+    columns: 170px;
+  }
+}
