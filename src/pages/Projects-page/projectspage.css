@@ -260,4 +260,7 @@ body {
     height: 2.2rem;
     border-radius: 6px;
   }
+  .warp-text {
+    display: none;
+  }
 }
