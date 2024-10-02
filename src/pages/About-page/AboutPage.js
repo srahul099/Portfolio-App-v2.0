@@ -17,43 +17,42 @@ const AboutPage = () => {
           </div>
           <div className="about_R">
             <p>
-              I'm Rahul, a fourth-year Computer Science student at{" "}
+              I'm a Computer Science student at{" "}
               <span className="special">
-                SRM Institute of Science and Engineering
+                SRM Institute of Science and Technology
               </span>
-              . My passion lies in crafting user-centric experiences as a UI/UX
-              designer and front-end developer. With a keen eye for detail and a
-              love for clean code, I specialize in building high-performance
-              websites and applications. My expertise spans{" "}
+              . My passion lies in building user-friendly solutions that enhance
+              overall user experiences. I am currently focused on{" "}
               <span className="special">
-                HTML, CSS, JavaScript, React, Node.js, Tailwind CSS, QML, and
-                C++
+                React Native, Expo, Firebase, and React
               </span>
-              . From concept to execution, I strive to create digital
-              experiences that seamlessly blend functionality with aesthetics.
-              My journey isn't just confined to coding. I bring a wealth of{" "}
+              , leveraging these technologies to create responsive and
+              functional applications. One of my ongoing projects is Rescue
+              Paws, a mobile app designed to facilitate the rescue and adoption
+              of stray and pet dogs. The app will soon be published on the{" "}
+              <span className="special">Play Store and App Store</span>, and it
+              incorporates AI-driven features to guide users through the
+              adoption process. In addition to app development, I’ve led the
+              design and development of platforms like the GitHub Community SRM
+              website, which serves as an all-in-one platform for the community.
+              I’ve also organized and managed events such as hackathons and
+              workshops, mentoring others in UI/UX and graphic design. I thrive
+              in <span className="special">Agile Scrum environments</span> and
+              believe collaboration and teamwork are essential to delivering
+              successful projects. I’m always eager to work on impactful
+              projects that challenge me to grow while also contributing to
+              meaningful outcomes. So, whether you're{" "}
               <span className="special">
-                experience in graphic design and agile scrum methodologies
+                looking for a dedicated developer, a creative designer, or a
+                collaborative team member
               </span>
-              , ensuring smooth integrations between design and development.
-              Collaboration is at the heart of my approach, as I believe the
-              best results emerge from teamwork and communication. Beyond the
-              realm of technology, I find solace in creative pursuits.
-              Photography allows me to capture moments and tell stories through
-              my lens, while graphic design unleashes my creativity in the
-              digital realm. And when I need to recharge, you'll often find me
-              exploring new music, curating playlists, and immersing myself in
-              melodies from diverse genres. So, whether you're{" "}
-              <span className="special">
-                seeking a skilled developer, a creative designer, or a
-                collaborative team player
-              </span>
-              , I'm here to bring your digital visions to life. Let's connect
-              and embark on an exciting journey of innovation together!
+              , I’m here to help bring ideas to life. Let’s connect and create
+              innovative solutions together!
             </p>
+
             <div className="about_Buttons">
               <a
-                href="https://drive.google.com/uc?export=download&id=1SAWQg0rKhkxOWiLXpyPyYTHl0M31ujGs"
+                href="https://drive.google.com/uc?export=download&id=1HxLmL7tG_DPDEVOVcbUqSO-Ob9W7NtZt"
                 download="Rahul-Resume.pdf"
                 aria-label="Download Resume"
               >
