@@ -31,6 +31,11 @@ function AboutCarousel() {
             height="40"
             alt="tailwindcss logo"
           />
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" />
+
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg"
             height="40"
@@ -109,6 +114,11 @@ function AboutCarousel() {
             height="40"
             alt="tailwindcss logo"
           />
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" />
+
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg"
             height="40"

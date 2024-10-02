@@ -32,7 +32,7 @@ const Projects = () => {
       <div className="projects">
         {/*  */}
         {/* projects */}
-        <div className="projectpage-container">
+        <div className="project-container">
           <img src={rescue} alt="" className="project-image" />
           <div className="projectpage-desc">
             <div className="prj-card-title">
@@ -60,7 +60,7 @@ const Projects = () => {
             {/* <button className="demo-btn">Demo</button> */}
           </div>
         </div>
-        <div className="projectpage-container">
+        <div className="project-container">
           <img src={symptom} alt="" className="project-image" />
           <div className="projectpage-desc">
             <div className="prj-card-title">
