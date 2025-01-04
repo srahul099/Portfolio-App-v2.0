@@ -14,12 +14,12 @@ const Heroanim = () => {
         </div>
         <div className="infinitehorizon2">
           <span>
-            Frontend Developer Frontend Developer Frontend Developer Frontend
-            Developer
+            Fullstack Developer Fullstack Developer Fullstack Developer
+            Fullstack Developer
           </span>
           <span>
-            Frontend Developer Frontend Developer Frontend Developer Frontend
-            Developer
+            Fullstack Developer Fullstack Developer Fullstack Developer
+            Fullstack Developer
           </span>
         </div>
       </div>

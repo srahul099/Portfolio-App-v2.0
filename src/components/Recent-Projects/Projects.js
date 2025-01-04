@@ -2,13 +2,10 @@ import React from "react";
 import "./projects.css";
 
 // banner imports
-import userauthenticationbanner from "../../common/images/banners/UserAunthentication-banner.png";
 import rescue from "../../common/images/banners/rescue-paws-banner.png";
-import symptom from "../../common/images/banners/Symptom-banner.png";
 import contgen from "../../common/images/banners/contgen-banner.png";
 import expo from "../../common/images/expologo.png";
-import portfoliobanner from "../../common/images/banners/Portfolio-banner.png";
-import ISRObanner from "../../common/images/banners/ISRO-banner.png";
+import HMI from "../../common/images/banners/HMI.png";
 //banner imports end
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faGear } from "@fortawesome/free-solid-svg-icons";
@@ -32,6 +29,33 @@ const Projects = () => {
       <div className="projects">
         {/*  */}
         {/* projects */}
+        <NavLink
+          to="/projects/InstrumentClusterDesign"
+          onClick={scrollToTop}
+          className="projectpage-container"
+        >
+          <img src={HMI} alt="" className="project-image" />
+          <div className="projectpage-desc">
+            <div className="prj-card-title">
+              <div className="project-card-heading">
+                <h2 className="warp-text">Instrument Cluster</h2>
+                <h2 className=" mobile">Instrument Cluster Design</h2>
+                <div className="project_type">UI Design</div>
+              </div>
+            </div>
+            <p className="proj__descrption">
+              Designed a Human-Machine Interface concept for modern driving with
+              a focus on clarity, functionality, and aesthetics. The design aims
+              to provide an intuitive user experience.
+            </p>
+            <img
+              src="https://skillicons.dev/icons?i=figma"
+              alt="tech stack"
+              className="projectpage-tech"
+            />
+            {/* <button className="demo-btn">Demo</button> */}
+          </div>
+        </NavLink>
         <div className="project-container">
           <img src={rescue} alt="" className="project-image" />
           <div className="projectpage-desc">
@@ -60,33 +84,7 @@ const Projects = () => {
             {/* <button className="demo-btn">Demo</button> */}
           </div>
         </div>
-        <div className="project-container">
-          <img src={symptom} alt="" className="project-image" />
-          <div className="projectpage-desc">
-            <div className="prj-card-title">
-              <div className="project-card-heading">
-                <h2 className="warp-text">Symptom Checker</h2>
-                <h2 className="warp-text mobile">Symptom</h2>
-                <h2 className="warp-text mobile">Checker</h2>
-                <div className="project_type">Full Stack</div>
-              </div>
-              <div className="workInProgress">
-                <p>Work in Progress</p>
-                <FontAwesomeIcon icon={faGear} spin />
-              </div>
-            </div>
-            <p className="proj__descrption">
-              Currently Developing an AI based Animal Symptom Checker which can
-              be used for initial diagnosis of animals.
-            </p>
-            <img
-              src="https://skillicons.dev/icons?i=nextjs,react,tailwindcss,javascript,firebase"
-              alt="tech stack"
-              className="projectpage-tech"
-            />
-            {/* <button className="demo-btn">Demo</button> */}
-          </div>
-        </div>
+
         <div className="projectpage-container">
           <img src={contgen} alt="" className="project-image" />
           <div className="projectpage-desc">

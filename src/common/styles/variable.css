@@ -6,6 +6,7 @@
   --dark-blue: #242938;
   --black-blue: #161b22;
   --grey: #8b949e;
+  --hmi-blue: #021124;
 }
 @property --angle {
   syntax: "<angle>";
