@@ -15,7 +15,7 @@ const Hero = () => {
         <p className="line1">Hey There I'm</p>
         <h1 className="name">RAHUL</h1>
         <p className="line2">
-          Currently Studying Computer Science and Engineering
+          Fullstack Developer and <br></br>UI Designer based in India
         </p>
         <div className="socials">
           <a

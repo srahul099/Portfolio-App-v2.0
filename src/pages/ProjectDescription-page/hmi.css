@@ -1,0 +1,77 @@
+@import url("https://fonts.cdnfonts.com/css/general-sans");
+
+.hmi-container {
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: var(--hmi-blue);
+  margin-bottom: 20px;
+}
+.hmi-heading {
+  font-family: "Organetto-ext" !important;
+  margin-bottom: 3px !important;
+  width: fit-content !important;
+}
+.hmi-desc {
+  font-family: "General Sans" !important;
+  font-weight: 400 !important;
+  color: white !important;
+}
+.hmi-fonts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0px !important;
+  margin-bottom: 20px;
+}
+.hmi-img-grid {
+  width: 80% !important;
+}
+.hmi-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.hmi-mobile {
+  display: none;
+}
+.hmi-icons {
+  max-width: 1069px;
+}
+.hmi-icon-img {
+  width: 100% !important;
+}
+.hmi-screen-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .hmi-mobile {
+    display: block;
+  }
+  .hmi-desk {
+    display: none;
+  }
+  .hmi-row {
+    flex-direction: column;
+  }
+  .hmi-heading {
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+  }
+  .hmi-grid {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .hmi-img-grid {
+    width: 70% !important;
+  }
+
+  .hmi-screen-grid {
+    grid-template-columns: 1fr;
+  }
+}

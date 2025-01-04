@@ -11,6 +11,11 @@
   src: local("Organetto"), url("./Organetto-RegularCnd.ttf") format(TrueType);
 }
 @font-face {
+  font-family: Organetto-ext;
+  font-weight: 500;
+  src: local("Organetto"), url("./Organetto-BoldSemiExt.ttf") format(TrueType);
+}
+@font-face {
   font-family: Humane;
   font-weight: 500;
   src: local("Humane"), url("./Humane-Bold.ttf") format("truetype");
