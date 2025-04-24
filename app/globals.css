@@ -11,7 +11,8 @@ html {
 }
 :root {
   --radius: 0.625rem;
-  --background: #0d1117;
+  --background: #161b22;
+  --notBlack: #0d1117
   --foreground: #ffffff;
   --carrousal-gray: #2c2b2b;
   --accent: #d5ff3f;
@@ -46,6 +47,7 @@ html {
 }
 
 @theme inline {
+  --carrousal-gray: #2c2b2b;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
@@ -85,29 +87,28 @@ html {
 
 @font-face {
   font-family: humane;
-  src: url(/public/assets/fonts/Humane-Bold.ttf) format("truetype");
+  src: url(/assets/fonts/Humane-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: organetto;
-  src: url(/public/assets/fonts/Organetto-UltraBoldCnd.ttf) format("truetype");
+  src: url(/assets/fonts/Organetto-UltraBoldCnd.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: general-sans;
-  src: url(/public/assets/fonts/GeneralSans-Variable.ttf) format("truetype");
+  src: url(/assets/fonts/GeneralSans-Variable.ttf) format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: general-sans;
-  src: url(/public/assets/fonts/GeneralSans-VariableItalic.ttf)
-    format("truetype");
+  src: url(/assets/fonts/GeneralSans-VariableItalic.ttf) format("truetype");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;

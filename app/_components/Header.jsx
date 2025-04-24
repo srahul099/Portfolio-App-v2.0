@@ -31,10 +31,13 @@ export default function Header() {
   const router = useRouter();
   const handleClick = (path) => () => {
     router.push(path);
+    setTimeout(() => {
+      setIsMenuOpen(false);
+    }, 500);
   };
   return (
-    <div>
-      <div className="hidden md:flex flex-row justify-center items-center p-6 space-x-15 ">
+    <div className="h-full sticky top-0 bg-background z-10">
+      <div className="hidden md:flex flex-row justify-center items-center p-6 space-x-15 bg-background">
         {navItems.map((menu, index) => (
           <div
             key={index}
@@ -47,24 +50,30 @@ export default function Header() {
           </div>
         ))}
       </div>
-      <div className="md:hidden fixed top-4 right-4 z-50">
-        <Hamburger toggled={isMenuOpen} toggle={setIsMenuOpen} />
+      <div className="md:hidden fixed top-4 right-4 z-50 p=2 bg-background rounded-xl">
+        <Hamburger
+          toggled={isMenuOpen}
+          toggle={setIsMenuOpen}
+          color="var(--accent)"
+        />
       </div>
-
-      {/* Sliding Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-accent text-white transform ${
-          isMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out z-40`}
+        className={`fixed top-0 left-0 mb-3 mt-3 h-[calc(100dvh-24px)]  w-[70%] bg-[var(--carrousal-gray)] text-white transform ${
+          isMenuOpen
+            ? "translate-x-0 ml-3 rounded-2xl"
+            : "-translate-x-full rounded-lg"
+        } transition-transform duration-300 ease-in-out z-10`}
       >
-        <div className="flex flex-col space-y-6 mt-16 p-4">
+        <div className="flex flex-col space-y-3 mt-16 p-4">
           {navItems.map((menu, index) => (
             <div
               key={index}
               onClick={handleClick(menu.path)}
-              className={`cursor-pointer ${
-                menu.path == current_path ? "text-accent" : "text-white"
-              }`}
+              className={`cursor-pointer  ${
+                menu.path == current_path
+                  ? "bg-accent text-background px-4 py-2 rounded-xl text-xl font-semibold "
+                  : "text-white px-4 py-2"
+              } transition-all duration-300 ease-in-out`}
             >
               {menu.name}
             </div>

@@ -11,7 +11,7 @@ export default function Hero() {
     "Tech Enthusiast",
   ];
   return (
-    <div className="flex flex-col justify-center items-center h-[calc(100vh-100px)] select-none mb-10">
+    <div className="flex flex-col justify-center items-center h-[100dvh] md:h-[calc(100vh-100px)] select-none mb-10">
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-10 z-[-1] opacity-40">
         <div className="relative w-full">
           <TextCarrousal text="SOFTWARE TEST ENGINEER" direction={"-"} />
@@ -34,14 +34,14 @@ export default function Hero() {
           ></div>
         </div>
       </div>
-      <p className="leading-tight text-xl mb-3 text-accent z-1">
+      <p className="leading-tight text-2xl md:text-3xl mb-3 text-accent z-1">
         Hey there, I'm
       </p>
-      <h1 className="font-[humane] font-bold text-[20rem] leading-[0.85] text-center text-accent z-1">
+      <h1 className="font-[humane] font-bold text-[20rem] md:text-[25rem] leading-[0.85] text-center text-accent z-1">
         RAHUL
       </h1>
-      <div className="text-xl relative top-[-30px]">
-        <FlipWords words={words} />
+      <div className="text-xl relative top-[-30px] w-full text-center">
+        <FlipWords words={words} className={"text-2xl md:text-3xl"} />
       </div>
       <div className="flex flex-row justify-center items-center space-x-4  relative top-[-10px]">
         <a
